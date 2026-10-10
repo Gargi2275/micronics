@@ -1,0 +1,3503 @@
+{
+  "heroSlides": [
+    {
+      "id": "hero-1",
+      "title": "Data Center Resilience",
+      "slug": "data-center-resilience",
+      "headline": "Enterprise Backup That Recovers When It Matters",
+      "keyword": "Backup",
+      "subheading": "Protect servers, SaaS apps, databases, and endpoints with one recovery-first platform.",
+      "primaryCta": "Start Free Trial",
+      "primaryLink": "/free-trial",
+      "secondaryCta": "Explore Products",
+      "secondaryLink": "/products",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "alt": "Modern data center with glowing server racks",
+      "order": 1,
+      "active": true,
+      "status": "published",
+      "seoTitle": "Enterprise Backup Software",
+      "seoDescription": "Backup software for business resilience.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "hero-2",
+      "title": "Cloud Continuity",
+      "slug": "cloud-continuity",
+      "headline": "Cloud Workloads Protected Across Every Team",
+      "keyword": "Protection",
+      "subheading": "Secure Microsoft 365, Google Workspace, and cloud repositories from accidental loss and attack.",
+      "primaryCta": "Request a Demo",
+      "primaryLink": "/contact",
+      "secondaryCta": "Cloud Solutions",
+      "secondaryLink": "/solutions/cloud-application-backup",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2200&q=85",
+      "alt": "Abstract blue cloud and network connections",
+      "order": 2,
+      "active": true,
+      "status": "published",
+      "seoTitle": "Cloud Backup",
+      "seoDescription": "Cloud backup and recovery.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "hero-3",
+      "title": "Ransomware Recovery",
+      "slug": "ransomware-recovery",
+      "headline": "Immutable Recovery Points Against Ransomware",
+      "keyword": "Recovery",
+      "subheading": "Layer encryption, retention locks, and tested restores into every protection policy.",
+      "primaryCta": "See Protection",
+      "primaryLink": "/solutions/ransomware-protection",
+      "secondaryCta": "Talk to an Expert",
+      "secondaryLink": "/contact",
+      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=2200&q=85",
+      "alt": "Cybersecurity padlock with digital glow",
+      "order": 3,
+      "active": true,
+      "status": "published",
+      "seoTitle": "Ransomware Recovery",
+      "seoDescription": "Immutable ransomware recovery.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "hero-4",
+      "title": "Managed Operations",
+      "slug": "managed-operations",
+      "headline": "Backup Operations Your Team Can Trust",
+      "keyword": "Backup",
+      "subheading": "Give administrators and MSPs a clean command center for monitoring, reporting, and restore readiness.",
+      "primaryCta": "View Services",
+      "primaryLink": "/services",
+      "secondaryCta": "Compare Plans",
+      "secondaryLink": "/pricing",
+      "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=2200&q=85",
+      "alt": "IT team working with dashboards",
+      "order": 4,
+      "active": true,
+      "status": "published",
+      "seoTitle": "Managed Backup",
+      "seoDescription": "Managed backup operations.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "product-1",
+      "slug": "central-backup-server",
+      "title": "Central Backup Server",
+      "icon": "Server",
+      "shortDescription": "A unified web console for administrators and MSPs to orchestrate every protected workload.",
+      "body": "Command every backup job, retention policy, restore point and customer tenant from one clean control plane.",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 1,
+      "seoTitle": "Central Backup Server | Micronics Devlon",
+      "seoDescription": "A unified web console for administrators and MSPs to orchestrate every protected workload.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "price": "From $399/mo",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "Cloud",
+        "Object Storage"
+      ],
+      "features": [
+        "Policy automation",
+        "AES-256 encryption",
+        "Immutable retention",
+        "Granular restore",
+        "Deduplicated storage",
+        "Automatic restore tests"
+      ],
+      "requirements": [
+        {
+          "label": "Management",
+          "value": "Browser-based console with secure administrator access"
+        },
+        {
+          "label": "Storage",
+          "value": "Local disk, NAS, private cloud or S3-compatible object storage"
+        },
+        {
+          "label": "Network",
+          "value": "Outbound HTTPS connectivity for agents and reports"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can we test restores before buying?",
+          "answer": "Yes. Trial workspaces include guided restore validation and sample policies."
+        },
+        {
+          "question": "Is data encrypted before transfer?",
+          "answer": "Yes. Backup data is encrypted in transit and at rest with policy-level key controls."
+        }
+      ],
+      "related": [
+        "managed-backup-as-a-service",
+        "ransomware-protection"
+      ]
+    },
+    {
+      "id": "product-2",
+      "slug": "backup-client",
+      "title": "Backup Client for Servers & Workstations",
+      "icon": "Laptop",
+      "shortDescription": "Lightweight endpoint protection for Windows, Linux and macOS devices.",
+      "body": "Quiet, policy-driven agents keep laptops, workstations and branch servers restorable without slowing teams down.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 2,
+      "seoTitle": "Backup Client for Servers & Workstations | Micronics Devlon",
+      "seoDescription": "Lightweight endpoint protection for Windows, Linux and macOS devices.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "price": "From $12/device",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "Cloud",
+        "Object Storage"
+      ],
+      "features": [
+        "Policy automation",
+        "AES-256 encryption",
+        "Immutable retention",
+        "Granular restore",
+        "Deduplicated storage",
+        "Automatic restore tests"
+      ],
+      "requirements": [
+        {
+          "label": "Management",
+          "value": "Browser-based console with secure administrator access"
+        },
+        {
+          "label": "Storage",
+          "value": "Local disk, NAS, private cloud or S3-compatible object storage"
+        },
+        {
+          "label": "Network",
+          "value": "Outbound HTTPS connectivity for agents and reports"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can we test restores before buying?",
+          "answer": "Yes. Trial workspaces include guided restore validation and sample policies."
+        },
+        {
+          "question": "Is data encrypted before transfer?",
+          "answer": "Yes. Backup data is encrypted in transit and at rest with policy-level key controls."
+        }
+      ],
+      "related": [
+        "managed-backup-as-a-service",
+        "ransomware-protection"
+      ]
+    },
+    {
+      "id": "product-3",
+      "slug": "microsoft-365-google-workspace-backup",
+      "title": "Microsoft 365 & Google Workspace Backup",
+      "icon": "Cloud",
+      "shortDescription": "Granular cloud app backup for mailboxes, drives, chats and shared workspaces.",
+      "body": "Protect SaaS collaboration data from deletion, ransomware and retention gaps with fast item-level restore.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 3,
+      "seoTitle": "Microsoft 365 & Google Workspace Backup | Micronics Devlon",
+      "seoDescription": "Granular cloud app backup for mailboxes, drives, chats and shared workspaces.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "price": "From $5/user",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "Cloud",
+        "Object Storage"
+      ],
+      "features": [
+        "Policy automation",
+        "AES-256 encryption",
+        "Immutable retention",
+        "Granular restore",
+        "Deduplicated storage",
+        "Automatic restore tests"
+      ],
+      "requirements": [
+        {
+          "label": "Management",
+          "value": "Browser-based console with secure administrator access"
+        },
+        {
+          "label": "Storage",
+          "value": "Local disk, NAS, private cloud or S3-compatible object storage"
+        },
+        {
+          "label": "Network",
+          "value": "Outbound HTTPS connectivity for agents and reports"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can we test restores before buying?",
+          "answer": "Yes. Trial workspaces include guided restore validation and sample policies."
+        },
+        {
+          "question": "Is data encrypted before transfer?",
+          "answer": "Yes. Backup data is encrypted in transit and at rest with policy-level key controls."
+        }
+      ],
+      "related": [
+        "managed-backup-as-a-service",
+        "ransomware-protection"
+      ]
+    },
+    {
+      "id": "product-4",
+      "slug": "virtual-machine-backup",
+      "title": "Virtual Machine Backup",
+      "icon": "Boxes",
+      "shortDescription": "Image-level backup for VMware, Hyper-V and Proxmox environments.",
+      "body": "Recover full VMs, disks or files quickly with deduplicated storage and verified restore points.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 4,
+      "seoTitle": "Virtual Machine Backup | Micronics Devlon",
+      "seoDescription": "Image-level backup for VMware, Hyper-V and Proxmox environments.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "price": "Custom quote",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "Cloud",
+        "Object Storage"
+      ],
+      "features": [
+        "Policy automation",
+        "AES-256 encryption",
+        "Immutable retention",
+        "Granular restore",
+        "Deduplicated storage",
+        "Automatic restore tests"
+      ],
+      "requirements": [
+        {
+          "label": "Management",
+          "value": "Browser-based console with secure administrator access"
+        },
+        {
+          "label": "Storage",
+          "value": "Local disk, NAS, private cloud or S3-compatible object storage"
+        },
+        {
+          "label": "Network",
+          "value": "Outbound HTTPS connectivity for agents and reports"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can we test restores before buying?",
+          "answer": "Yes. Trial workspaces include guided restore validation and sample policies."
+        },
+        {
+          "question": "Is data encrypted before transfer?",
+          "answer": "Yes. Backup data is encrypted in transit and at rest with policy-level key controls."
+        }
+      ],
+      "related": [
+        "managed-backup-as-a-service",
+        "ransomware-protection"
+      ]
+    },
+    {
+      "id": "product-5",
+      "slug": "database-backup",
+      "title": "Database Backup",
+      "icon": "Database",
+      "shortDescription": "Application-aware database backup for critical transactional systems.",
+      "body": "Protect MySQL, MariaDB, Oracle, SQL Server and PostgreSQL with encrypted, schedule-aware policies.",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 5,
+      "seoTitle": "Database Backup | Micronics Devlon",
+      "seoDescription": "Application-aware database backup for critical transactional systems.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "price": "Custom quote",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "Cloud",
+        "Object Storage"
+      ],
+      "features": [
+        "Policy automation",
+        "AES-256 encryption",
+        "Immutable retention",
+        "Granular restore",
+        "Deduplicated storage",
+        "Automatic restore tests"
+      ],
+      "requirements": [
+        {
+          "label": "Management",
+          "value": "Browser-based console with secure administrator access"
+        },
+        {
+          "label": "Storage",
+          "value": "Local disk, NAS, private cloud or S3-compatible object storage"
+        },
+        {
+          "label": "Network",
+          "value": "Outbound HTTPS connectivity for agents and reports"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can we test restores before buying?",
+          "answer": "Yes. Trial workspaces include guided restore validation and sample policies."
+        },
+        {
+          "question": "Is data encrypted before transfer?",
+          "answer": "Yes. Backup data is encrypted in transit and at rest with policy-level key controls."
+        }
+      ],
+      "related": [
+        "managed-backup-as-a-service",
+        "ransomware-protection"
+      ]
+    },
+    {
+      "id": "product-6",
+      "slug": "nas-backup-agent",
+      "title": "NAS Backup Agent",
+      "icon": "HardDrive",
+      "shortDescription": "Direct protection for Synology and QNAP network storage.",
+      "body": "Back up shared folders, snapshots and NAS workloads to cloud, object storage or your own repository.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 6,
+      "seoTitle": "NAS Backup Agent | Micronics Devlon",
+      "seoDescription": "Direct protection for Synology and QNAP network storage.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "price": "From $49/site",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "Cloud",
+        "Object Storage"
+      ],
+      "features": [
+        "Policy automation",
+        "AES-256 encryption",
+        "Immutable retention",
+        "Granular restore",
+        "Deduplicated storage",
+        "Automatic restore tests"
+      ],
+      "requirements": [
+        {
+          "label": "Management",
+          "value": "Browser-based console with secure administrator access"
+        },
+        {
+          "label": "Storage",
+          "value": "Local disk, NAS, private cloud or S3-compatible object storage"
+        },
+        {
+          "label": "Network",
+          "value": "Outbound HTTPS connectivity for agents and reports"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can we test restores before buying?",
+          "answer": "Yes. Trial workspaces include guided restore validation and sample policies."
+        },
+        {
+          "question": "Is data encrypted before transfer?",
+          "answer": "Yes. Backup data is encrypted in transit and at rest with policy-level key controls."
+        }
+      ],
+      "related": [
+        "managed-backup-as-a-service",
+        "ransomware-protection"
+      ]
+    },
+    {
+      "id": "product-7",
+      "slug": "mobile-backup-app",
+      "title": "Mobile Backup App",
+      "icon": "Smartphone",
+      "shortDescription": "Simple mobile backup for Android and iOS field teams.",
+      "body": "Secure contacts, media and business documents from phones and tablets with centralized controls.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 7,
+      "seoTitle": "Mobile Backup App | Micronics Devlon",
+      "seoDescription": "Simple mobile backup for Android and iOS field teams.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "price": "From $6/user",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "Cloud",
+        "Object Storage"
+      ],
+      "features": [
+        "Policy automation",
+        "AES-256 encryption",
+        "Immutable retention",
+        "Granular restore",
+        "Deduplicated storage",
+        "Automatic restore tests"
+      ],
+      "requirements": [
+        {
+          "label": "Management",
+          "value": "Browser-based console with secure administrator access"
+        },
+        {
+          "label": "Storage",
+          "value": "Local disk, NAS, private cloud or S3-compatible object storage"
+        },
+        {
+          "label": "Network",
+          "value": "Outbound HTTPS connectivity for agents and reports"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can we test restores before buying?",
+          "answer": "Yes. Trial workspaces include guided restore validation and sample policies."
+        },
+        {
+          "question": "Is data encrypted before transfer?",
+          "answer": "Yes. Backup data is encrypted in transit and at rest with policy-level key controls."
+        }
+      ],
+      "related": [
+        "managed-backup-as-a-service",
+        "ransomware-protection"
+      ]
+    }
+  ],
+  "services": [
+    {
+      "id": "service-1",
+      "slug": "micronics-diy-setup",
+      "title": "Micronics DIY Setup",
+      "starred": true,
+      "badge": "Popular",
+      "icon": "Workflow",
+      "shortDescription": "Step-by-step guided self-hosted implementation with policy templates and architecture validation.",
+      "body": "Professional service engagement for Micronics DIY Setup. Micronics Devlon combines practical implementation, monitoring discipline, and recovery-first planning to keep operations resilient.",
+      "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 1,
+      "seoTitle": "Micronics DIY Setup | Micronics Devlon Services",
+      "seoDescription": "Step-by-step guided self-hosted implementation with policy templates and architecture validation.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "included": [
+        "Technical consultation",
+        "Architecture blueprint",
+        "Implementation & rollout",
+        "Restore validation drills",
+        "Operational handoff & docs"
+      ],
+      "process": [
+        "Discovery & Assessment",
+        "Design Architecture",
+        "Deploy & Configure",
+        "Validate & Drill",
+        "24/7 Handover"
+      ],
+      "audience": [
+        "IT Directors",
+        "MSPs & Hosting Providers",
+        "Compliance Officers",
+        "Enterprise Infrastructure Teams"
+      ],
+      "faqs": [
+        {
+          "question": "How fast can we start this service?",
+          "answer": "Most service engagements begin with an assessment and pilot protection plan within 1-3 business days."
+        },
+        {
+          "question": "Do you offer SLA guarantees?",
+          "answer": "Yes. All managed service plans include formal recovery time (RTO) and recovery point (RPO) SLAs."
+        }
+      ]
+    },
+    {
+      "id": "service-2",
+      "slug": "managed-backup-as-a-service-mbaas",
+      "title": "Managed Backup-as-a-Service (MBaaS)",
+      "starred": true,
+      "badge": "Popular",
+      "icon": "ShieldCheck",
+      "shortDescription": "A fully managed 24/7 backup program operated by certified recovery specialists.",
+      "body": "Professional service engagement for Managed Backup-as-a-Service (MBaaS). Micronics Devlon combines practical implementation, monitoring discipline, and recovery-first planning to keep operations resilient.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 2,
+      "seoTitle": "Managed Backup-as-a-Service (MBaaS) | Micronics Devlon Services",
+      "seoDescription": "A fully managed 24/7 backup program operated by certified recovery specialists.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "included": [
+        "Technical consultation",
+        "Architecture blueprint",
+        "Implementation & rollout",
+        "Restore validation drills",
+        "Operational handoff & docs"
+      ],
+      "process": [
+        "Discovery & Assessment",
+        "Design Architecture",
+        "Deploy & Configure",
+        "Validate & Drill",
+        "24/7 Handover"
+      ],
+      "audience": [
+        "IT Directors",
+        "MSPs & Hosting Providers",
+        "Compliance Officers",
+        "Enterprise Infrastructure Teams"
+      ],
+      "faqs": [
+        {
+          "question": "How fast can we start this service?",
+          "answer": "Most service engagements begin with an assessment and pilot protection plan within 1-3 business days."
+        },
+        {
+          "question": "Do you offer SLA guarantees?",
+          "answer": "Yes. All managed service plans include formal recovery time (RTO) and recovery point (RPO) SLAs."
+        }
+      ]
+    },
+    {
+      "id": "service-3",
+      "slug": "micronics-go-backup-service",
+      "title": "Micronics Go Backup Service",
+      "starred": true,
+      "badge": "Popular",
+      "icon": "Zap",
+      "shortDescription": "Turnkey cloud backup service with zero server management and automated provisioning.",
+      "body": "Professional service engagement for Micronics Go Backup Service. Micronics Devlon combines practical implementation, monitoring discipline, and recovery-first planning to keep operations resilient.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 3,
+      "seoTitle": "Micronics Go Backup Service | Micronics Devlon Services",
+      "seoDescription": "Turnkey cloud backup service with zero server management and automated provisioning.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "included": [
+        "Technical consultation",
+        "Architecture blueprint",
+        "Implementation & rollout",
+        "Restore validation drills",
+        "Operational handoff & docs"
+      ],
+      "process": [
+        "Discovery & Assessment",
+        "Design Architecture",
+        "Deploy & Configure",
+        "Validate & Drill",
+        "24/7 Handover"
+      ],
+      "audience": [
+        "IT Directors",
+        "MSPs & Hosting Providers",
+        "Compliance Officers",
+        "Enterprise Infrastructure Teams"
+      ],
+      "faqs": [
+        {
+          "question": "How fast can we start this service?",
+          "answer": "Most service engagements begin with an assessment and pilot protection plan within 1-3 business days."
+        },
+        {
+          "question": "Do you offer SLA guarantees?",
+          "answer": "Yes. All managed service plans include formal recovery time (RTO) and recovery point (RPO) SLAs."
+        }
+      ]
+    },
+    {
+      "id": "service-4",
+      "slug": "product-architecture-comparison",
+      "title": "Product & Architecture Comparison",
+      "starred": true,
+      "badge": "Popular",
+      "icon": "ChartNoAxesCombined",
+      "shortDescription": "Comprehensive technical review comparing protection options, operational effort, and recovery speed.",
+      "body": "Professional service engagement for Product & Architecture Comparison. Micronics Devlon combines practical implementation, monitoring discipline, and recovery-first planning to keep operations resilient.",
+      "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 4,
+      "seoTitle": "Product & Architecture Comparison | Micronics Devlon Services",
+      "seoDescription": "Comprehensive technical review comparing protection options, operational effort, and recovery speed.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "included": [
+        "Technical consultation",
+        "Architecture blueprint",
+        "Implementation & rollout",
+        "Restore validation drills",
+        "Operational handoff & docs"
+      ],
+      "process": [
+        "Discovery & Assessment",
+        "Design Architecture",
+        "Deploy & Configure",
+        "Validate & Drill",
+        "24/7 Handover"
+      ],
+      "audience": [
+        "IT Directors",
+        "MSPs & Hosting Providers",
+        "Compliance Officers",
+        "Enterprise Infrastructure Teams"
+      ],
+      "faqs": [
+        {
+          "question": "How fast can we start this service?",
+          "answer": "Most service engagements begin with an assessment and pilot protection plan within 1-3 business days."
+        },
+        {
+          "question": "Do you offer SLA guarantees?",
+          "answer": "Yes. All managed service plans include formal recovery time (RTO) and recovery point (RPO) SLAs."
+        }
+      ]
+    },
+    {
+      "id": "service-5",
+      "slug": "backup-infrastructure-as-a-service-baas",
+      "title": "Backup Infrastructure as a Service (BaaS)",
+      "starred": false,
+      "icon": "Server",
+      "shortDescription": "Dedicated high-performance backup infrastructure without building and maintaining physical hardware.",
+      "body": "Professional service engagement for Backup Infrastructure as a Service (BaaS). Micronics Devlon combines practical implementation, monitoring discipline, and recovery-first planning to keep operations resilient.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 5,
+      "seoTitle": "Backup Infrastructure as a Service (BaaS) | Micronics Devlon Services",
+      "seoDescription": "Dedicated high-performance backup infrastructure without building and maintaining physical hardware.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "included": [
+        "Technical consultation",
+        "Architecture blueprint",
+        "Implementation & rollout",
+        "Restore validation drills",
+        "Operational handoff & docs"
+      ],
+      "process": [
+        "Discovery & Assessment",
+        "Design Architecture",
+        "Deploy & Configure",
+        "Validate & Drill",
+        "24/7 Handover"
+      ],
+      "audience": [
+        "IT Directors",
+        "MSPs & Hosting Providers",
+        "Compliance Officers",
+        "Enterprise Infrastructure Teams"
+      ],
+      "faqs": [
+        {
+          "question": "How fast can we start this service?",
+          "answer": "Most service engagements begin with an assessment and pilot protection plan within 1-3 business days."
+        },
+        {
+          "question": "Do you offer SLA guarantees?",
+          "answer": "Yes. All managed service plans include formal recovery time (RTO) and recovery point (RPO) SLAs."
+        }
+      ]
+    },
+    {
+      "id": "service-6",
+      "slug": "installation-configuration",
+      "title": "Installation & Configuration",
+      "starred": false,
+      "icon": "Workflow",
+      "shortDescription": "Expert on-site or remote rollout for policies, agents, repositories, and administrator training.",
+      "body": "Professional service engagement for Installation & Configuration. Micronics Devlon combines practical implementation, monitoring discipline, and recovery-first planning to keep operations resilient.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 6,
+      "seoTitle": "Installation & Configuration | Micronics Devlon Services",
+      "seoDescription": "Expert on-site or remote rollout for policies, agents, repositories, and administrator training.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "included": [
+        "Technical consultation",
+        "Architecture blueprint",
+        "Implementation & rollout",
+        "Restore validation drills",
+        "Operational handoff & docs"
+      ],
+      "process": [
+        "Discovery & Assessment",
+        "Design Architecture",
+        "Deploy & Configure",
+        "Validate & Drill",
+        "24/7 Handover"
+      ],
+      "audience": [
+        "IT Directors",
+        "MSPs & Hosting Providers",
+        "Compliance Officers",
+        "Enterprise Infrastructure Teams"
+      ],
+      "faqs": [
+        {
+          "question": "How fast can we start this service?",
+          "answer": "Most service engagements begin with an assessment and pilot protection plan within 1-3 business days."
+        },
+        {
+          "question": "Do you offer SLA guarantees?",
+          "answer": "Yes. All managed service plans include formal recovery time (RTO) and recovery point (RPO) SLAs."
+        }
+      ]
+    },
+    {
+      "id": "service-7",
+      "slug": "encryption-key-recovery",
+      "title": "Encryption Key Recovery",
+      "starred": false,
+      "icon": "KeyRound",
+      "shortDescription": "Structured recovery assistance for protected vault and encryption key disaster scenarios.",
+      "body": "Professional service engagement for Encryption Key Recovery. Micronics Devlon combines practical implementation, monitoring discipline, and recovery-first planning to keep operations resilient.",
+      "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 7,
+      "seoTitle": "Encryption Key Recovery | Micronics Devlon Services",
+      "seoDescription": "Structured recovery assistance for protected vault and encryption key disaster scenarios.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "included": [
+        "Technical consultation",
+        "Architecture blueprint",
+        "Implementation & rollout",
+        "Restore validation drills",
+        "Operational handoff & docs"
+      ],
+      "process": [
+        "Discovery & Assessment",
+        "Design Architecture",
+        "Deploy & Configure",
+        "Validate & Drill",
+        "24/7 Handover"
+      ],
+      "audience": [
+        "IT Directors",
+        "MSPs & Hosting Providers",
+        "Compliance Officers",
+        "Enterprise Infrastructure Teams"
+      ],
+      "faqs": [
+        {
+          "question": "How fast can we start this service?",
+          "answer": "Most service engagements begin with an assessment and pilot protection plan within 1-3 business days."
+        },
+        {
+          "question": "Do you offer SLA guarantees?",
+          "answer": "Yes. All managed service plans include formal recovery time (RTO) and recovery point (RPO) SLAs."
+        }
+      ]
+    },
+    {
+      "id": "service-8",
+      "slug": "central-server-upgrade-service",
+      "title": "Central Server Upgrade Service",
+      "starred": false,
+      "icon": "RefreshCcw",
+      "shortDescription": "Planned zero-downtime upgrades keeping protection online while environments modernize.",
+      "body": "Professional service engagement for Central Server Upgrade Service. Micronics Devlon combines practical implementation, monitoring discipline, and recovery-first planning to keep operations resilient.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 8,
+      "seoTitle": "Central Server Upgrade Service | Micronics Devlon Services",
+      "seoDescription": "Planned zero-downtime upgrades keeping protection online while environments modernize.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "included": [
+        "Technical consultation",
+        "Architecture blueprint",
+        "Implementation & rollout",
+        "Restore validation drills",
+        "Operational handoff & docs"
+      ],
+      "process": [
+        "Discovery & Assessment",
+        "Design Architecture",
+        "Deploy & Configure",
+        "Validate & Drill",
+        "24/7 Handover"
+      ],
+      "audience": [
+        "IT Directors",
+        "MSPs & Hosting Providers",
+        "Compliance Officers",
+        "Enterprise Infrastructure Teams"
+      ],
+      "faqs": [
+        {
+          "question": "How fast can we start this service?",
+          "answer": "Most service engagements begin with an assessment and pilot protection plan within 1-3 business days."
+        },
+        {
+          "question": "Do you offer SLA guarantees?",
+          "answer": "Yes. All managed service plans include formal recovery time (RTO) and recovery point (RPO) SLAs."
+        }
+      ]
+    },
+    {
+      "id": "service-9",
+      "slug": "backup-app-branding-service",
+      "title": "Backup App Branding Service",
+      "starred": false,
+      "icon": "BadgeCheck",
+      "shortDescription": "White-label client applications with your company logo, icons, brand colors, and portal URLs.",
+      "body": "Professional service engagement for Backup App Branding Service. Micronics Devlon combines practical implementation, monitoring discipline, and recovery-first planning to keep operations resilient.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 9,
+      "seoTitle": "Backup App Branding Service | Micronics Devlon Services",
+      "seoDescription": "White-label client applications with your company logo, icons, brand colors, and portal URLs.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "included": [
+        "Technical consultation",
+        "Architecture blueprint",
+        "Implementation & rollout",
+        "Restore validation drills",
+        "Operational handoff & docs"
+      ],
+      "process": [
+        "Discovery & Assessment",
+        "Design Architecture",
+        "Deploy & Configure",
+        "Validate & Drill",
+        "24/7 Handover"
+      ],
+      "audience": [
+        "IT Directors",
+        "MSPs & Hosting Providers",
+        "Compliance Officers",
+        "Enterprise Infrastructure Teams"
+      ],
+      "faqs": [
+        {
+          "question": "How fast can we start this service?",
+          "answer": "Most service engagements begin with an assessment and pilot protection plan within 1-3 business days."
+        },
+        {
+          "question": "Do you offer SLA guarantees?",
+          "answer": "Yes. All managed service plans include formal recovery time (RTO) and recovery point (RPO) SLAs."
+        }
+      ]
+    },
+    {
+      "id": "service-10",
+      "slug": "build-my-branded-installer-service",
+      "title": "Build My Branded Installer Service",
+      "starred": false,
+      "icon": "Boxes",
+      "shortDescription": "Custom packaged installers tuned to your customer onboarding and MSP distribution model.",
+      "body": "Professional service engagement for Build My Branded Installer Service. Micronics Devlon combines practical implementation, monitoring discipline, and recovery-first planning to keep operations resilient.",
+      "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 10,
+      "seoTitle": "Build My Branded Installer Service | Micronics Devlon Services",
+      "seoDescription": "Custom packaged installers tuned to your customer onboarding and MSP distribution model.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "included": [
+        "Technical consultation",
+        "Architecture blueprint",
+        "Implementation & rollout",
+        "Restore validation drills",
+        "Operational handoff & docs"
+      ],
+      "process": [
+        "Discovery & Assessment",
+        "Design Architecture",
+        "Deploy & Configure",
+        "Validate & Drill",
+        "24/7 Handover"
+      ],
+      "audience": [
+        "IT Directors",
+        "MSPs & Hosting Providers",
+        "Compliance Officers",
+        "Enterprise Infrastructure Teams"
+      ],
+      "faqs": [
+        {
+          "question": "How fast can we start this service?",
+          "answer": "Most service engagements begin with an assessment and pilot protection plan within 1-3 business days."
+        },
+        {
+          "question": "Do you offer SLA guarantees?",
+          "answer": "Yes. All managed service plans include formal recovery time (RTO) and recovery point (RPO) SLAs."
+        }
+      ]
+    }
+  ],
+  "solutions": [
+    {
+      "id": "solution-1",
+      "slug": "google-workspace",
+      "title": "Google Workspace",
+      "category": "Cloud Applications Backup",
+      "starred": true,
+      "badge": "Featured",
+      "icon": "Cloud",
+      "shortDescription": "Complete backup for Gmail, Google Drive, Shared Drives, Contacts, and Calendar.",
+      "body": "Comprehensive, enterprise-grade protection for Google Workspace. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 1,
+      "seoTitle": "Google Workspace Backup Solution | Micronics Devlon",
+      "seoDescription": "Complete backup for Gmail, Google Drive, Shared Drives, Contacts, and Calendar.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-2",
+      "slug": "microsoft-365-teams",
+      "title": "Microsoft 365 & Teams",
+      "category": "Cloud Applications Backup",
+      "starred": true,
+      "badge": "Featured",
+      "icon": "Cloud",
+      "shortDescription": "Granular protection for Exchange Online, SharePoint, OneDrive for Business, and Microsoft Teams.",
+      "body": "Comprehensive, enterprise-grade protection for Microsoft 365 & Teams. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 2,
+      "seoTitle": "Microsoft 365 & Teams Backup Solution | Micronics Devlon",
+      "seoDescription": "Granular protection for Exchange Online, SharePoint, OneDrive for Business, and Microsoft Teams.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-3",
+      "slug": "google-cloud-storage",
+      "title": "Google Cloud Storage",
+      "category": "Cloud Applications Backup",
+      "starred": false,
+      "icon": "Cloud",
+      "shortDescription": "Automated bucket-to-bucket backup and cross-region replication for Google Cloud data.",
+      "body": "Comprehensive, enterprise-grade protection for Google Cloud Storage. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 3,
+      "seoTitle": "Google Cloud Storage Backup Solution | Micronics Devlon",
+      "seoDescription": "Automated bucket-to-bucket backup and cross-region replication for Google Cloud data.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-4",
+      "slug": "google-drive",
+      "title": "Google Drive",
+      "category": "Cloud Applications Backup",
+      "starred": false,
+      "icon": "Cloud",
+      "shortDescription": "Continuous file versioning and accidental deletion recovery for enterprise Google Drive users.",
+      "body": "Comprehensive, enterprise-grade protection for Google Drive. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 4,
+      "seoTitle": "Google Drive Backup Solution | Micronics Devlon",
+      "seoDescription": "Continuous file versioning and accidental deletion recovery for enterprise Google Drive users.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-5",
+      "slug": "microsoft-azure",
+      "title": "Microsoft Azure",
+      "category": "Cloud Applications Backup",
+      "starred": false,
+      "icon": "Cloud",
+      "shortDescription": "Cloud backup for Azure VMs, blob containers, Azure Files, and enterprise databases.",
+      "body": "Comprehensive, enterprise-grade protection for Microsoft Azure. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 5,
+      "seoTitle": "Microsoft Azure Backup Solution | Micronics Devlon",
+      "seoDescription": "Cloud backup for Azure VMs, blob containers, Azure Files, and enterprise databases.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-6",
+      "slug": "onedrive",
+      "title": "OneDrive",
+      "category": "Cloud Applications Backup",
+      "starred": false,
+      "icon": "Cloud",
+      "shortDescription": "Direct endpoint and cloud sync backup for user OneDrive folders with point-in-time rollback.",
+      "body": "Comprehensive, enterprise-grade protection for OneDrive. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 6,
+      "seoTitle": "OneDrive Backup Solution | Micronics Devlon",
+      "seoDescription": "Direct endpoint and cloud sync backup for user OneDrive folders with point-in-time rollback.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-7",
+      "slug": "amazon-s3",
+      "title": "Amazon S3",
+      "category": "Cloud Applications Backup",
+      "starred": false,
+      "icon": "Cloud",
+      "shortDescription": "Immutable replication and versioning for S3 buckets with cross-account air-gapping.",
+      "body": "Comprehensive, enterprise-grade protection for Amazon S3. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 7,
+      "seoTitle": "Amazon S3 Backup Solution | Micronics Devlon",
+      "seoDescription": "Immutable replication and versioning for S3 buckets with cross-account air-gapping.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-8",
+      "slug": "aws-s3-compatible-storage",
+      "title": "AWS S3 compatible storage",
+      "category": "Cloud Applications Backup",
+      "starred": false,
+      "icon": "Cloud",
+      "shortDescription": "Connect any S3-compatible object storage (Wasabi, MinIO, Backblaze) for low-cost vaulting.",
+      "body": "Comprehensive, enterprise-grade protection for AWS S3 compatible storage. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 8,
+      "seoTitle": "AWS S3 compatible storage Backup Solution | Micronics Devlon",
+      "seoDescription": "Connect any S3-compatible object storage (Wasabi, MinIO, Backblaze) for low-cost vaulting.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-9",
+      "slug": "dropbox",
+      "title": "Dropbox",
+      "category": "Cloud Applications Backup",
+      "starred": false,
+      "icon": "Cloud",
+      "shortDescription": "Automated retention and ransomware rollback for Dropbox Business accounts and team folders.",
+      "body": "Comprehensive, enterprise-grade protection for Dropbox. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 9,
+      "seoTitle": "Dropbox Backup Solution | Micronics Devlon",
+      "seoDescription": "Automated retention and ransomware rollback for Dropbox Business accounts and team folders.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-10",
+      "slug": "wasabi",
+      "title": "Wasabi",
+      "category": "Cloud Applications Backup",
+      "starred": false,
+      "icon": "Cloud",
+      "shortDescription": "Hot cloud storage destination with zero egress fees and automated immutable locking.",
+      "body": "Comprehensive, enterprise-grade protection for Wasabi. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 10,
+      "seoTitle": "Wasabi Backup Solution | Micronics Devlon",
+      "seoDescription": "Hot cloud storage destination with zero egress fees and automated immutable locking.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-11",
+      "slug": "openstack",
+      "title": "OpenStack",
+      "category": "Cloud Applications Backup",
+      "starred": false,
+      "icon": "Cloud",
+      "shortDescription": "Private cloud snapshotting and block storage volume backup for OpenStack environments.",
+      "body": "Comprehensive, enterprise-grade protection for OpenStack. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 11,
+      "seoTitle": "OpenStack Backup Solution | Micronics Devlon",
+      "seoDescription": "Private cloud snapshotting and block storage volume backup for OpenStack environments.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-12",
+      "slug": "rackspace",
+      "title": "Rackspace",
+      "category": "Cloud Applications Backup",
+      "starred": false,
+      "icon": "Cloud",
+      "shortDescription": "Protected hybrid storage and dedicated server backups hosted on Rackspace.",
+      "body": "Comprehensive, enterprise-grade protection for Rackspace. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 12,
+      "seoTitle": "Rackspace Backup Solution | Micronics Devlon",
+      "seoDescription": "Protected hybrid storage and dedicated server backups hosted on Rackspace.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-13",
+      "slug": "backblaze-b2",
+      "title": "Backblaze B2",
+      "category": "Cloud Applications Backup",
+      "starred": false,
+      "icon": "Cloud",
+      "shortDescription": "Cost-effective offsite cloud storage with strict WORM compliance guarantees.",
+      "body": "Comprehensive, enterprise-grade protection for Backblaze B2. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 13,
+      "seoTitle": "Backblaze B2 Backup Solution | Micronics Devlon",
+      "seoDescription": "Cost-effective offsite cloud storage with strict WORM compliance guarantees.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-14",
+      "slug": "ftp-server",
+      "title": "FTP Server",
+      "category": "Cloud Applications Backup",
+      "starred": false,
+      "icon": "Server",
+      "shortDescription": "Scheduled legacy FTP data backups with automated compression and remote copy.",
+      "body": "Comprehensive, enterprise-grade protection for FTP Server. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 14,
+      "seoTitle": "FTP Server Backup Solution | Micronics Devlon",
+      "seoDescription": "Scheduled legacy FTP data backups with automated compression and remote copy.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-15",
+      "slug": "sftp-server",
+      "title": "SFTP Server",
+      "category": "Cloud Applications Backup",
+      "starred": false,
+      "icon": "Server",
+      "shortDescription": "Secure shell encrypted transfers for Linux hosts and remote automated repository backups.",
+      "body": "Comprehensive, enterprise-grade protection for SFTP Server. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 15,
+      "seoTitle": "SFTP Server Backup Solution | Micronics Devlon",
+      "seoDescription": "Secure shell encrypted transfers for Linux hosts and remote automated repository backups.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-16",
+      "slug": "proxmox-ve",
+      "title": "Proxmox VE",
+      "category": "Onsite Systems Backup",
+      "starred": true,
+      "badge": "Featured",
+      "icon": "Server",
+      "shortDescription": "Host-level agentless backup for Proxmox virtual machines and LXC containers.",
+      "body": "Comprehensive, enterprise-grade protection for Proxmox VE. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 16,
+      "seoTitle": "Proxmox VE Backup Solution | Micronics Devlon",
+      "seoDescription": "Host-level agentless backup for Proxmox virtual machines and LXC containers.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-17",
+      "slug": "hyper-v",
+      "title": "Hyper-V",
+      "category": "Onsite Systems Backup",
+      "starred": false,
+      "icon": "Boxes",
+      "shortDescription": "Cluster-aware VSS image backups for Microsoft Hyper-V hosts with instant VM Run Direct.",
+      "body": "Comprehensive, enterprise-grade protection for Hyper-V. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 17,
+      "seoTitle": "Hyper-V Backup Solution | Micronics Devlon",
+      "seoDescription": "Cluster-aware VSS image backups for Microsoft Hyper-V hosts with instant VM Run Direct.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-18",
+      "slug": "vmware",
+      "title": "VMware",
+      "category": "Onsite Systems Backup",
+      "starred": false,
+      "icon": "Boxes",
+      "shortDescription": "vSphere & ESXi CBT-enabled image protection with granular file and full VM instant restore.",
+      "body": "Comprehensive, enterprise-grade protection for VMware. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 18,
+      "seoTitle": "VMware Backup Solution | Micronics Devlon",
+      "seoDescription": "vSphere & ESXi CBT-enabled image protection with granular file and full VM instant restore.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-19",
+      "slug": "synology-qnap-nas",
+      "title": "Synology & QNAP NAS",
+      "category": "Onsite Systems Backup",
+      "starred": false,
+      "icon": "HardDrive",
+      "shortDescription": "Native embedded package protection for Synology DSM and QNAP QTS network appliances.",
+      "body": "Comprehensive, enterprise-grade protection for Synology & QNAP NAS. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 19,
+      "seoTitle": "Synology & QNAP NAS Backup Solution | Micronics Devlon",
+      "seoDescription": "Native embedded package protection for Synology DSM and QNAP QTS network appliances.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-20",
+      "slug": "linux-bare-metal-backup",
+      "title": "Linux Bare Metal Backup",
+      "category": "Onsite Systems Backup",
+      "starred": false,
+      "icon": "Server",
+      "shortDescription": "Complete system state image capture for Ubuntu, RHEL, CentOS, Debian and Rocky Linux.",
+      "body": "Comprehensive, enterprise-grade protection for Linux Bare Metal Backup. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 20,
+      "seoTitle": "Linux Bare Metal Backup Backup Solution | Micronics Devlon",
+      "seoDescription": "Complete system state image capture for Ubuntu, RHEL, CentOS, Debian and Rocky Linux.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-21",
+      "slug": "microsoft-exchange-database",
+      "title": "Microsoft Exchange Database",
+      "category": "Onsite Systems Backup",
+      "starred": false,
+      "icon": "Database",
+      "shortDescription": "Hot VSS transaction log truncation and database recovery for Exchange 2016, 2019 & Hybrid.",
+      "body": "Comprehensive, enterprise-grade protection for Microsoft Exchange Database. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 21,
+      "seoTitle": "Microsoft Exchange Database Backup Solution | Micronics Devlon",
+      "seoDescription": "Hot VSS transaction log truncation and database recovery for Exchange 2016, 2019 & Hybrid.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-22",
+      "slug": "microsoft-exchange-mailbox",
+      "title": "Microsoft Exchange Mailbox",
+      "category": "Onsite Systems Backup",
+      "starred": false,
+      "icon": "Mail",
+      "shortDescription": "Item-level message, folder, and calendar recovery without restoring the entire database.",
+      "body": "Comprehensive, enterprise-grade protection for Microsoft Exchange Mailbox. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 22,
+      "seoTitle": "Microsoft Exchange Mailbox Backup Solution | Micronics Devlon",
+      "seoDescription": "Item-level message, folder, and calendar recovery without restoring the entire database.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-23",
+      "slug": "microsoft-sql-server",
+      "title": "Microsoft SQL Server",
+      "category": "Onsite Systems Backup",
+      "starred": false,
+      "icon": "Database",
+      "shortDescription": "Full, differential, and transaction log backup for SQL Server 2014-2022 with point-in-time restore.",
+      "body": "Comprehensive, enterprise-grade protection for Microsoft SQL Server. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 23,
+      "seoTitle": "Microsoft SQL Server Backup Solution | Micronics Devlon",
+      "seoDescription": "Full, differential, and transaction log backup for SQL Server 2014-2022 with point-in-time restore.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-24",
+      "slug": "oracle",
+      "title": "Oracle",
+      "category": "Onsite Systems Backup",
+      "starred": false,
+      "icon": "Database",
+      "shortDescription": "Oracle RMAN integrated online backup with archive log management and tablespace restore.",
+      "body": "Comprehensive, enterprise-grade protection for Oracle. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 24,
+      "seoTitle": "Oracle Backup Solution | Micronics Devlon",
+      "seoDescription": "Oracle RMAN integrated online backup with archive log management and tablespace restore.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-25",
+      "slug": "mysql",
+      "title": "MySQL",
+      "category": "Onsite Systems Backup",
+      "starred": false,
+      "icon": "Database",
+      "shortDescription": "Hot logical and physical binary backup for MySQL instances with zero service disruption.",
+      "body": "Comprehensive, enterprise-grade protection for MySQL. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 25,
+      "seoTitle": "MySQL Backup Solution | Micronics Devlon",
+      "seoDescription": "Hot logical and physical binary backup for MySQL instances with zero service disruption.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-26",
+      "slug": "mariadb",
+      "title": "MariaDB",
+      "category": "Onsite Systems Backup",
+      "starred": false,
+      "icon": "Database",
+      "shortDescription": "Non-blocking snapshot backups for MariaDB database clusters and Galera nodes.",
+      "body": "Comprehensive, enterprise-grade protection for MariaDB. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 26,
+      "seoTitle": "MariaDB Backup Solution | Micronics Devlon",
+      "seoDescription": "Non-blocking snapshot backups for MariaDB database clusters and Galera nodes.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-27",
+      "slug": "postgresql",
+      "title": "PostgreSQL",
+      "category": "Onsite Systems Backup",
+      "starred": false,
+      "icon": "Database",
+      "shortDescription": "Continuous archiving and Point-in-Time Recovery (PITR) for PostgreSQL 12-17.",
+      "body": "Comprehensive, enterprise-grade protection for PostgreSQL. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 27,
+      "seoTitle": "PostgreSQL Backup Solution | Micronics Devlon",
+      "seoDescription": "Continuous archiving and Point-in-Time Recovery (PITR) for PostgreSQL 12-17.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-28",
+      "slug": "tibero",
+      "title": "Tibero",
+      "category": "Onsite Systems Backup",
+      "starred": false,
+      "icon": "Database",
+      "shortDescription": "Enterprise RDBMS protection for TmaxSoft Tibero transactional architectures.",
+      "body": "Comprehensive, enterprise-grade protection for Tibero. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 28,
+      "seoTitle": "Tibero Backup Solution | Micronics Devlon",
+      "seoDescription": "Enterprise RDBMS protection for TmaxSoft Tibero transactional architectures.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-29",
+      "slug": "windows-system-backup",
+      "title": "Windows System Backup",
+      "category": "Onsite Systems Backup",
+      "starred": false,
+      "icon": "Laptop",
+      "shortDescription": "Complete image backup for Windows 10/11 and Windows Server 2016-2025.",
+      "body": "Comprehensive, enterprise-grade protection for Windows System Backup. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 29,
+      "seoTitle": "Windows System Backup Backup Solution | Micronics Devlon",
+      "seoDescription": "Complete image backup for Windows 10/11 and Windows Server 2016-2025.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-30",
+      "slug": "windows-system-state",
+      "title": "Windows System State",
+      "category": "Onsite Systems Backup",
+      "starred": false,
+      "icon": "Laptop",
+      "shortDescription": "Active Directory, registry, boot files and certificate services system state capture.",
+      "body": "Comprehensive, enterprise-grade protection for Windows System State. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 30,
+      "seoTitle": "Windows System State Backup Solution | Micronics Devlon",
+      "seoDescription": "Active Directory, registry, boot files and certificate services system state capture.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-31",
+      "slug": "servers-desktops-notebooks",
+      "title": "Servers / Desktops / Notebooks",
+      "category": "Onsite Systems Backup",
+      "starred": false,
+      "icon": "Laptop",
+      "shortDescription": "Centralized policy management for physical workstations, laptops and remote workforce endpoints.",
+      "body": "Comprehensive, enterprise-grade protection for Servers / Desktops / Notebooks. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 31,
+      "seoTitle": "Servers / Desktops / Notebooks Backup Solution | Micronics Devlon",
+      "seoDescription": "Centralized policy management for physical workstations, laptops and remote workforce endpoints.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-32",
+      "slug": "file",
+      "title": "File",
+      "category": "Onsite Systems Backup",
+      "starred": false,
+      "icon": "FileCheck",
+      "shortDescription": "High-speed multi-threaded file and folder backup with delta deduplication.",
+      "body": "Comprehensive, enterprise-grade protection for File. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 32,
+      "seoTitle": "File Backup Solution | Micronics Devlon",
+      "seoDescription": "High-speed multi-threaded file and folder backup with delta deduplication.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-33",
+      "slug": "mobile-phones-tablets",
+      "title": "Mobile Phones / Tablets",
+      "category": "Personal Backup (FREE)",
+      "starred": false,
+      "icon": "Smartphone",
+      "shortDescription": "Automatic photo, video, contact and document backup for iOS and Android devices.",
+      "body": "Comprehensive, enterprise-grade protection for Mobile Phones / Tablets. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 33,
+      "seoTitle": "Mobile Phones / Tablets Backup Solution | Micronics Devlon",
+      "seoDescription": "Automatic photo, video, contact and document backup for iOS and Android devices.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    },
+    {
+      "id": "solution-34",
+      "slug": "home-computers",
+      "title": "Home Computers",
+      "category": "Personal Backup (FREE)",
+      "starred": false,
+      "icon": "Laptop",
+      "shortDescription": "Simple scheduled protection for home laptops, personal documents and family archives.",
+      "body": "Comprehensive, enterprise-grade protection for Home Computers. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 34,
+      "seoTitle": "Home Computers Backup Solution | Micronics Devlon",
+      "seoDescription": "Simple scheduled protection for home laptops, personal documents and family archives.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Sub-second restore readiness",
+        "AES-256 encryption at rest and in flight",
+        "WORM immutable retention policy",
+        "Centralized policy management"
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "feature-1",
+      "slug": "auto-renewal-of-ssl-certificates",
+      "title": "Auto-renewal of SSL Certificates",
+      "category": "New",
+      "starred": true,
+      "badge": "New",
+      "icon": "ShieldCheck",
+      "shortDescription": "Automated Let's Encrypt SSL certificate provisioning and renewal for backup servers.",
+      "body": "Feature capabilities for Auto-renewal of SSL Certificates. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 1,
+      "seoTitle": "Auto-renewal of SSL Certificates | Micronics Devlon Features",
+      "seoDescription": "Automated Let's Encrypt SSL certificate provisioning and renewal for backup servers.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-2",
+      "slug": "immutable-backup",
+      "title": "Immutable Backup",
+      "category": "New",
+      "starred": true,
+      "badge": "New",
+      "icon": "Lock",
+      "shortDescription": "Cryptographic retention locks on local disk and cloud vaults to defeat ransomware attacks.",
+      "body": "Feature capabilities for Immutable Backup. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 2,
+      "seoTitle": "Immutable Backup | Micronics Devlon Features",
+      "seoDescription": "Cryptographic retention locks on local disk and cloud vaults to defeat ransomware attacks.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-3",
+      "slug": "restore-drill",
+      "title": "Restore Drill",
+      "category": "New",
+      "starred": false,
+      "icon": "Zap",
+      "shortDescription": "Automated background restore validation and virtual machine boot verification.",
+      "body": "Feature capabilities for Restore Drill. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 3,
+      "seoTitle": "Restore Drill | Micronics Devlon Features",
+      "seoDescription": "Automated background restore validation and virtual machine boot verification.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-4",
+      "slug": "data-deduplication",
+      "title": "Data Deduplication",
+      "category": "New",
+      "starred": false,
+      "icon": "Database",
+      "shortDescription": "Global source and target deduplication saving up to 90% of repository storage space.",
+      "body": "Feature capabilities for Data Deduplication. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 4,
+      "seoTitle": "Data Deduplication | Micronics Devlon Features",
+      "seoDescription": "Global source and target deduplication saving up to 90% of repository storage space.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-5",
+      "slug": "microsoft-teams",
+      "title": "Microsoft Teams",
+      "category": "New",
+      "starred": false,
+      "icon": "Cloud",
+      "shortDescription": "Full backup and granular restore for Teams channels, chats, attachments, and files.",
+      "body": "Feature capabilities for Microsoft Teams. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 5,
+      "seoTitle": "Microsoft Teams | Micronics Devlon Features",
+      "seoDescription": "Full backup and granular restore for Teams channels, chats, attachments, and files.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-6",
+      "slug": "application-aware-vm-backup",
+      "title": "Application aware VM backup",
+      "category": "New",
+      "starred": false,
+      "icon": "Boxes",
+      "shortDescription": "Consistent VSS application snapshots for database servers running inside VMs.",
+      "body": "Feature capabilities for Application aware VM backup. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 6,
+      "seoTitle": "Application aware VM backup | Micronics Devlon Features",
+      "seoDescription": "Consistent VSS application snapshots for database servers running inside VMs.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-7",
+      "slug": "online-file-restorer",
+      "title": "Online File Restorer",
+      "category": "New",
+      "starred": false,
+      "icon": "Globe2",
+      "shortDescription": "Browser-based self-service file portal allowing end-users to search and restore files.",
+      "body": "Feature capabilities for Online File Restorer. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 7,
+      "seoTitle": "Online File Restorer | Micronics Devlon Features",
+      "seoDescription": "Browser-based self-service file portal allowing end-users to search and restore files.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-8",
+      "slug": "real-time-network-monitor",
+      "title": "Real Time Network Monitor",
+      "category": "New",
+      "starred": false,
+      "icon": "Activity",
+      "shortDescription": "Live bandwidth throughput graphs, storage utilization, and agent health telemetry.",
+      "body": "Feature capabilities for Real Time Network Monitor. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 8,
+      "seoTitle": "Real Time Network Monitor | Micronics Devlon Features",
+      "seoDescription": "Live bandwidth throughput graphs, storage utilization, and agent health telemetry.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-9",
+      "slug": "anywhere-to-anywhere-backup",
+      "title": "Anywhere-to-anywhere backup",
+      "category": "Highlights",
+      "starred": false,
+      "icon": "Globe2",
+      "shortDescription": "Transfer data seamlessly between on-premise, cloud, and hybrid multi-destination targets.",
+      "body": "Feature capabilities for Anywhere-to-anywhere backup. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 9,
+      "seoTitle": "Anywhere-to-anywhere backup | Micronics Devlon Features",
+      "seoDescription": "Transfer data seamlessly between on-premise, cloud, and hybrid multi-destination targets.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-10",
+      "slug": "live-vm-migration",
+      "title": "Live VM Migration",
+      "category": "Highlights",
+      "starred": false,
+      "icon": "Boxes",
+      "shortDescription": "Migrate running VMs between disparate hypervisors without service downtime.",
+      "body": "Feature capabilities for Live VM Migration. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 10,
+      "seoTitle": "Live VM Migration | Micronics Devlon Features",
+      "seoDescription": "Migrate running VMs between disparate hypervisors without service downtime.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-11",
+      "slug": "vm-run-direct",
+      "title": "VM Run Direct",
+      "category": "Highlights",
+      "starred": false,
+      "icon": "Zap",
+      "shortDescription": "Instantly power on protected VMs directly from backup storage in under 2 minutes.",
+      "body": "Feature capabilities for VM Run Direct. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 11,
+      "seoTitle": "VM Run Direct | Micronics Devlon Features",
+      "seoDescription": "Instantly power on protected VMs directly from backup storage in under 2 minutes.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-12",
+      "slug": "granular-restore",
+      "title": "Granular Restore",
+      "category": "Highlights",
+      "starred": false,
+      "icon": "FileCheck",
+      "shortDescription": "Restore single emails, database tables, or individual files without full image recovery.",
+      "body": "Feature capabilities for Granular Restore. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 12,
+      "seoTitle": "Granular Restore | Micronics Devlon Features",
+      "seoDescription": "Restore single emails, database tables, or individual files without full image recovery.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-13",
+      "slug": "continuous-data-protection-cdp",
+      "title": "Continuous Data Protection (CDP)",
+      "category": "Highlights",
+      "starred": false,
+      "icon": "RefreshCw",
+      "shortDescription": "Near-zero RPO continuous tracking capturing file modifications the moment they happen.",
+      "body": "Feature capabilities for Continuous Data Protection (CDP). Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 13,
+      "seoTitle": "Continuous Data Protection (CDP) | Micronics Devlon Features",
+      "seoDescription": "Near-zero RPO continuous tracking capturing file modifications the moment they happen.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-14",
+      "slug": "two-factor-authentication-2fa",
+      "title": "Two-Factor Authentication (2FA)",
+      "category": "Highlights",
+      "starred": false,
+      "icon": "KeyRound",
+      "shortDescription": "Enforce TOTP and security key multi-factor authentication across all admin consoles.",
+      "body": "Feature capabilities for Two-Factor Authentication (2FA). Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 14,
+      "seoTitle": "Two-Factor Authentication (2FA) | Micronics Devlon Features",
+      "seoDescription": "Enforce TOTP and security key multi-factor authentication across all admin consoles.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-15",
+      "slug": "opendirect",
+      "title": "OpenDirect",
+      "category": "Highlights",
+      "starred": false,
+      "icon": "Radio",
+      "shortDescription": "Direct file stream access allowing instant extraction of uncompressed disk images.",
+      "body": "Feature capabilities for OpenDirect. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 15,
+      "seoTitle": "OpenDirect | Micronics Devlon Features",
+      "seoDescription": "Direct file stream access allowing instant extraction of uncompressed disk images.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-16",
+      "slug": "bandwidth-control",
+      "title": "Bandwidth Control",
+      "category": "Highlights",
+      "starred": false,
+      "icon": "Sliders",
+      "shortDescription": "Configurable throttle schedules preventing backup traffic from saturating business internet.",
+      "body": "Feature capabilities for Bandwidth Control. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 16,
+      "seoTitle": "Bandwidth Control | Micronics Devlon Features",
+      "seoDescription": "Configurable throttle schedules preventing backup traffic from saturating business internet.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-17",
+      "slug": "data-integrity-check",
+      "title": "Data Integrity Check",
+      "category": "Highlights",
+      "starred": false,
+      "icon": "ShieldCheck",
+      "shortDescription": "Automated cyclic checksum checks identifying and repairing bit rot on cold storage.",
+      "body": "Feature capabilities for Data Integrity Check. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 17,
+      "seoTitle": "Data Integrity Check | Micronics Devlon Features",
+      "seoDescription": "Automated cyclic checksum checks identifying and repairing bit rot on cold storage.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-18",
+      "slug": "multi-destinations-backup",
+      "title": "Multi-destinations backup",
+      "category": "Highlights",
+      "starred": false,
+      "icon": "Layers",
+      "shortDescription": "Simultaneously write backup copies to local disk, offsite datacenter, and public cloud.",
+      "body": "Feature capabilities for Multi-destinations backup. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 18,
+      "seoTitle": "Multi-destinations backup | Micronics Devlon Features",
+      "seoDescription": "Simultaneously write backup copies to local disk, offsite datacenter, and public cloud.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-19",
+      "slug": "backup-android-ios-devices",
+      "title": "Backup Android / iOS devices",
+      "category": "Highlights",
+      "starred": false,
+      "icon": "Smartphone",
+      "shortDescription": "Centralized policy-driven mobile device backup for field personnel and executives.",
+      "body": "Feature capabilities for Backup Android / iOS devices. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 19,
+      "seoTitle": "Backup Android / iOS devices | Micronics Devlon Features",
+      "seoDescription": "Centralized policy-driven mobile device backup for field personnel and executives.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-20",
+      "slug": "backup-filter",
+      "title": "Backup Filter",
+      "category": "General",
+      "starred": false,
+      "icon": "Sliders",
+      "shortDescription": "Wildcard, regex, and file attribute inclusion/exclusion filters for tight job control.",
+      "body": "Feature capabilities for Backup Filter. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 20,
+      "seoTitle": "Backup Filter | Micronics Devlon Features",
+      "seoDescription": "Wildcard, regex, and file attribute inclusion/exclusion filters for tight job control.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-21",
+      "slug": "backup-notifications",
+      "title": "Backup Notifications",
+      "category": "General",
+      "starred": false,
+      "icon": "Mail",
+      "shortDescription": "Real-time email and webhook alerts for job completions, warnings, and missed schedules.",
+      "body": "Feature capabilities for Backup Notifications. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 21,
+      "seoTitle": "Backup Notifications | Micronics Devlon Features",
+      "seoDescription": "Real-time email and webhook alerts for job completions, warnings, and missed schedules.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-22",
+      "slug": "backup-scheduling",
+      "title": "Backup Scheduling",
+      "category": "General",
+      "starred": false,
+      "icon": "RefreshCcw",
+      "shortDescription": "Flexible cron, periodic, and trigger-based schedules for non-intrusive operations.",
+      "body": "Feature capabilities for Backup Scheduling. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 22,
+      "seoTitle": "Backup Scheduling | Micronics Devlon Features",
+      "seoDescription": "Flexible cron, periodic, and trigger-based schedules for non-intrusive operations.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-23",
+      "slug": "cross-platform-support",
+      "title": "Cross Platform Support",
+      "category": "General",
+      "starred": false,
+      "icon": "Laptop",
+      "shortDescription": "Universal clients for Windows, Linux, macOS, FreeBSD, Synology, and QNAP.",
+      "body": "Feature capabilities for Cross Platform Support. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 23,
+      "seoTitle": "Cross Platform Support | Micronics Devlon Features",
+      "seoDescription": "Universal clients for Windows, Linux, macOS, FreeBSD, Synology, and QNAP.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-24",
+      "slug": "data-compression",
+      "title": "Data Compression",
+      "category": "General",
+      "starred": false,
+      "icon": "Database",
+      "shortDescription": "Fast multi-core Zstandard and LZ4 compression algorithms reducing transfer volume.",
+      "body": "Feature capabilities for Data Compression. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 24,
+      "seoTitle": "Data Compression | Micronics Devlon Features",
+      "seoDescription": "Fast multi-core Zstandard and LZ4 compression algorithms reducing transfer volume.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-25",
+      "slug": "data-encryption",
+      "title": "Data Encryption",
+      "category": "General",
+      "starred": false,
+      "icon": "LockKeyhole",
+      "shortDescription": "Military-grade AES-256 encryption with client-side zero-knowledge key isolation.",
+      "body": "Feature capabilities for Data Encryption. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 25,
+      "seoTitle": "Data Encryption | Micronics Devlon Features",
+      "seoDescription": "Military-grade AES-256 encryption with client-side zero-knowledge key isolation.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-26",
+      "slug": "data-retention-policy",
+      "title": "Data Retention Policy",
+      "category": "General",
+      "starred": false,
+      "icon": "ArchiveRestore",
+      "shortDescription": "Grandfather-Father-Son (GFS) and custom retention rules for compliance archives.",
+      "body": "Feature capabilities for Data Retention Policy. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 26,
+      "seoTitle": "Data Retention Policy | Micronics Devlon Features",
+      "seoDescription": "Grandfather-Father-Son (GFS) and custom retention rules for compliance archives.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-27",
+      "slug": "open-file-backup",
+      "title": "Open File Backup",
+      "category": "General",
+      "starred": false,
+      "icon": "FileLock2",
+      "shortDescription": "Volume Shadow Copy (VSS) and snapshot drivers for locked and in-use files.",
+      "body": "Feature capabilities for Open File Backup. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 27,
+      "seoTitle": "Open File Backup | Micronics Devlon Features",
+      "seoDescription": "Volume Shadow Copy (VSS) and snapshot drivers for locked and in-use files.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-28",
+      "slug": "pre-post-backup-command",
+      "title": "Pre/Post backup command",
+      "category": "General",
+      "starred": false,
+      "icon": "Workflow",
+      "shortDescription": "Execute custom PowerShell, bash, or script hooks before and after backup execution.",
+      "body": "Feature capabilities for Pre/Post backup command. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 28,
+      "seoTitle": "Pre/Post backup command | Micronics Devlon Features",
+      "seoDescription": "Execute custom PowerShell, bash, or script hooks before and after backup execution.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-29",
+      "slug": "branding-and-customization",
+      "title": "Branding and Customization",
+      "category": "System Management",
+      "starred": false,
+      "icon": "BadgeCheck",
+      "shortDescription": "White-label client installers, custom domains, logo replacement, and custom color themes for MSPs.",
+      "body": "Feature capabilities for Branding and Customization. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 29,
+      "seoTitle": "Branding and Customization | Micronics Devlon Features",
+      "seoDescription": "White-label client installers, custom domains, logo replacement, and custom color themes for MSPs.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-30",
+      "slug": "provisioning",
+      "title": "Provisioning",
+      "category": "System Management",
+      "starred": false,
+      "icon": "Users",
+      "shortDescription": "Automated tenant and user onboarding with preset storage quotas and policy templates.",
+      "body": "Feature capabilities for Provisioning. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 30,
+      "seoTitle": "Provisioning | Micronics Devlon Features",
+      "seoDescription": "Automated tenant and user onboarding with preset storage quotas and policy templates.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-31",
+      "slug": "group-policy",
+      "title": "Group Policy",
+      "category": "System Management",
+      "starred": false,
+      "icon": "Sliders",
+      "shortDescription": "Hierarchical policy inheritance enforcing backup standards across thousands of machines.",
+      "body": "Feature capabilities for Group Policy. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 31,
+      "seoTitle": "Group Policy | Micronics Devlon Features",
+      "seoDescription": "Hierarchical policy inheritance enforcing backup standards across thousands of machines.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-32",
+      "slug": "auto-update",
+      "title": "Auto Update",
+      "category": "System Management",
+      "starred": false,
+      "icon": "RefreshCw",
+      "shortDescription": "Silent centralized software update push across all distributed client agents.",
+      "body": "Feature capabilities for Auto Update. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 32,
+      "seoTitle": "Auto Update | Micronics Devlon Features",
+      "seoDescription": "Silent centralized software update push across all distributed client agents.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-33",
+      "slug": "monitoring",
+      "title": "Monitoring",
+      "category": "System Management",
+      "starred": false,
+      "icon": "Activity",
+      "shortDescription": "Comprehensive dashboard tracking active backup jobs, storage trends, and agent status.",
+      "body": "Feature capabilities for Monitoring. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 33,
+      "seoTitle": "Monitoring | Micronics Devlon Features",
+      "seoDescription": "Comprehensive dashboard tracking active backup jobs, storage trends, and agent status.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-34",
+      "slug": "reporting",
+      "title": "Reporting",
+      "category": "System Management",
+      "starred": false,
+      "icon": "ChartNoAxesCombined",
+      "shortDescription": "Executive compliance reports, billing summaries, and audit trail exports.",
+      "body": "Feature capabilities for Reporting. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 34,
+      "seoTitle": "Reporting | Micronics Devlon Features",
+      "seoDescription": "Executive compliance reports, billing summaries, and audit trail exports.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-35",
+      "slug": "load-balancing",
+      "title": "Load Balancing",
+      "category": "System Management",
+      "starred": false,
+      "icon": "Network",
+      "shortDescription": "Cluster multi-node backup servers to distribute concurrent client load evenly.",
+      "body": "Feature capabilities for Load Balancing. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 35,
+      "seoTitle": "Load Balancing | Micronics Devlon Features",
+      "seoDescription": "Cluster multi-node backup servers to distribute concurrent client load evenly.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-36",
+      "slug": "data-replication",
+      "title": "Data Replication",
+      "category": "System Management",
+      "starred": false,
+      "icon": "RefreshCcw",
+      "shortDescription": "Asynchronous replication between primary backup vaults and secondary disaster recovery sites.",
+      "body": "Feature capabilities for Data Replication. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 36,
+      "seoTitle": "Data Replication | Micronics Devlon Features",
+      "seoDescription": "Asynchronous replication between primary backup vaults and secondary disaster recovery sites.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-37",
+      "slug": "restful-apis",
+      "title": "RESTful APIs",
+      "category": "System Management",
+      "starred": false,
+      "icon": "Workflow",
+      "shortDescription": "Comprehensive API endpoints for automation, billing integration, and custom portal development.",
+      "body": "Feature capabilities for RESTful APIs. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 37,
+      "seoTitle": "RESTful APIs | Micronics Devlon Features",
+      "seoDescription": "Comprehensive API endpoints for automation, billing integration, and custom portal development.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "feature-38",
+      "slug": "windows-active-directory-integration",
+      "title": "Windows Active Directory Integration",
+      "category": "System Management",
+      "starred": false,
+      "icon": "Users",
+      "shortDescription": "Single sign-on (SSO) and automatic user synchronization with Active Directory and LDAP.",
+      "body": "Feature capabilities for Windows Active Directory Integration. Engineered for enterprise resilience, simplified administration, and high-performance throughput.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 38,
+      "seoTitle": "Windows Active Directory Integration | Micronics Devlon Features",
+      "seoDescription": "Single sign-on (SSO) and automatic user synchronization with Active Directory and LDAP.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z"
+    }
+  ],
+  "platforms": [
+    {
+      "id": "platform-1",
+      "slug": "microsoft-365",
+      "title": "Microsoft 365",
+      "category": "SaaS & Cloud",
+      "icon": "Cloud",
+      "shortDescription": "Exchange, SharePoint, OneDrive and Teams cloud backup.",
+      "body": "Dedicated protection blueprint for Microsoft 365. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 1,
+      "seoTitle": "Microsoft 365 Backup | Micronics Devlon",
+      "seoDescription": "Exchange, SharePoint, OneDrive and Teams cloud backup.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-2",
+      "slug": "microsoft-teams",
+      "title": "Microsoft Teams",
+      "category": "SaaS & Cloud",
+      "icon": "Cloud",
+      "shortDescription": "Channel chats, files, tabs and team settings protection.",
+      "body": "Dedicated protection blueprint for Microsoft Teams. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 2,
+      "seoTitle": "Microsoft Teams Backup | Micronics Devlon",
+      "seoDescription": "Channel chats, files, tabs and team settings protection.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-3",
+      "slug": "onedrive",
+      "title": "OneDrive",
+      "category": "SaaS & Cloud",
+      "icon": "Cloud",
+      "shortDescription": "Point-in-time file recovery for cloud business drives.",
+      "body": "Dedicated protection blueprint for OneDrive. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 3,
+      "seoTitle": "OneDrive Backup | Micronics Devlon",
+      "seoDescription": "Point-in-time file recovery for cloud business drives.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-4",
+      "slug": "outlook",
+      "title": "Outlook",
+      "category": "SaaS & Cloud",
+      "icon": "Mail",
+      "shortDescription": "Mailbox, contacts, calendar and archive retention.",
+      "body": "Dedicated protection blueprint for Outlook. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 4,
+      "seoTitle": "Outlook Backup | Micronics Devlon",
+      "seoDescription": "Mailbox, contacts, calendar and archive retention.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-5",
+      "slug": "microsoft-exchange-mail-level",
+      "title": "Microsoft Exchange Mail-Level",
+      "category": "SaaS & Cloud",
+      "icon": "Mail",
+      "shortDescription": "Granular mailbox and individual email item restoration.",
+      "body": "Dedicated protection blueprint for Microsoft Exchange Mail-Level. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 5,
+      "seoTitle": "Microsoft Exchange Mail-Level Backup | Micronics Devlon",
+      "seoDescription": "Granular mailbox and individual email item restoration.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-6",
+      "slug": "sharepoint",
+      "title": "SharePoint",
+      "category": "SaaS & Cloud",
+      "icon": "Cloud",
+      "shortDescription": "Document libraries, lists and permissions backup.",
+      "body": "Dedicated protection blueprint for SharePoint. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 6,
+      "seoTitle": "SharePoint Backup | Micronics Devlon",
+      "seoDescription": "Document libraries, lists and permissions backup.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-7",
+      "slug": "microsoft-exchange",
+      "title": "Microsoft Exchange",
+      "category": "Databases & Servers",
+      "icon": "Database",
+      "shortDescription": "Exchange Server database and VSS transaction log capture.",
+      "body": "Dedicated protection blueprint for Microsoft Exchange. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 7,
+      "seoTitle": "Microsoft Exchange Backup | Micronics Devlon",
+      "seoDescription": "Exchange Server database and VSS transaction log capture.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-8",
+      "slug": "microsoft-sql",
+      "title": "Microsoft SQL",
+      "category": "Databases & Servers",
+      "icon": "Database",
+      "shortDescription": "Full, diff and log backup for MS SQL Server instances.",
+      "body": "Dedicated protection blueprint for Microsoft SQL. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 8,
+      "seoTitle": "Microsoft SQL Backup | Micronics Devlon",
+      "seoDescription": "Full, diff and log backup for MS SQL Server instances.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-9",
+      "slug": "hyper-v",
+      "title": "Hyper-V",
+      "category": "Virtualization",
+      "icon": "Boxes",
+      "shortDescription": "Agentless VM cluster and snapshot image protection.",
+      "body": "Dedicated protection blueprint for Hyper-V. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 9,
+      "seoTitle": "Hyper-V Backup | Micronics Devlon",
+      "seoDescription": "Agentless VM cluster and snapshot image protection.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-10",
+      "slug": "vmware",
+      "title": "VMware",
+      "category": "Virtualization",
+      "icon": "Boxes",
+      "shortDescription": "vSphere ESXi CBT backups with instant VM direct mount.",
+      "body": "Dedicated protection blueprint for VMware. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 10,
+      "seoTitle": "VMware Backup | Micronics Devlon",
+      "seoDescription": "vSphere ESXi CBT backups with instant VM direct mount.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-11",
+      "slug": "mysql",
+      "title": "MySQL",
+      "category": "Databases & Servers",
+      "icon": "Database",
+      "shortDescription": "Consistent binary and logical dumps for MySQL.",
+      "body": "Dedicated protection blueprint for MySQL. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 11,
+      "seoTitle": "MySQL Backup | Micronics Devlon",
+      "seoDescription": "Consistent binary and logical dumps for MySQL.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-12",
+      "slug": "mariadb",
+      "title": "MariaDB",
+      "category": "Databases & Servers",
+      "icon": "Database",
+      "shortDescription": "Hot database backup for MariaDB and Galera clusters.",
+      "body": "Dedicated protection blueprint for MariaDB. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 12,
+      "seoTitle": "MariaDB Backup | Micronics Devlon",
+      "seoDescription": "Hot database backup for MariaDB and Galera clusters.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-13",
+      "slug": "oracle",
+      "title": "Oracle",
+      "category": "Databases & Servers",
+      "icon": "Database",
+      "shortDescription": "RMAN integrated tablespace and archive log backup.",
+      "body": "Dedicated protection blueprint for Oracle. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 13,
+      "seoTitle": "Oracle Backup | Micronics Devlon",
+      "seoDescription": "RMAN integrated tablespace and archive log backup.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-14",
+      "slug": "synology",
+      "title": "Synology",
+      "category": "NAS & Systems",
+      "icon": "HardDrive",
+      "shortDescription": "Native DSM package backup for Synology NAS arrays.",
+      "body": "Dedicated protection blueprint for Synology. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 14,
+      "seoTitle": "Synology Backup | Micronics Devlon",
+      "seoDescription": "Native DSM package backup for Synology NAS arrays.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-15",
+      "slug": "qnap",
+      "title": "QNAP",
+      "category": "NAS & Systems",
+      "icon": "HardDrive",
+      "shortDescription": "QTS appliance protection for QNAP network storage.",
+      "body": "Dedicated protection blueprint for QNAP. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 15,
+      "seoTitle": "QNAP Backup | Micronics Devlon",
+      "seoDescription": "QTS appliance protection for QNAP network storage.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-16",
+      "slug": "backup-cloud-data",
+      "title": "Backup cloud data",
+      "category": "SaaS & Cloud",
+      "icon": "Cloud",
+      "shortDescription": "Cross-cloud multi-region repository replication.",
+      "body": "Dedicated protection blueprint for Backup cloud data. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 16,
+      "seoTitle": "Backup cloud data Backup | Micronics Devlon",
+      "seoDescription": "Cross-cloud multi-region repository replication.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-17",
+      "slug": "google-drive",
+      "title": "Google Drive",
+      "category": "SaaS & Cloud",
+      "icon": "Cloud",
+      "shortDescription": "Continuous versioning for Google Workspace files.",
+      "body": "Dedicated protection blueprint for Google Drive. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 17,
+      "seoTitle": "Google Drive Backup | Micronics Devlon",
+      "seoDescription": "Continuous versioning for Google Workspace files.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-18",
+      "slug": "amazon-s3",
+      "title": "Amazon S3",
+      "category": "SaaS & Cloud",
+      "icon": "Cloud",
+      "shortDescription": "Immutable bucket replication and object lock storage.",
+      "body": "Dedicated protection blueprint for Amazon S3. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 18,
+      "seoTitle": "Amazon S3 Backup | Micronics Devlon",
+      "seoDescription": "Immutable bucket replication and object lock storage.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-19",
+      "slug": "mobile",
+      "title": "Mobile",
+      "category": "Endpoints",
+      "icon": "Smartphone",
+      "shortDescription": "Android and iOS mobile contact, photo and file backup.",
+      "body": "Dedicated protection blueprint for Mobile. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 19,
+      "seoTitle": "Mobile Backup | Micronics Devlon",
+      "seoDescription": "Android and iOS mobile contact, photo and file backup.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-20",
+      "slug": "nas-san",
+      "title": "NAS / SAN",
+      "category": "NAS & Systems",
+      "icon": "HardDrive",
+      "shortDescription": "Block and file storage snapshots for enterprise storage.",
+      "body": "Dedicated protection blueprint for NAS / SAN. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 20,
+      "seoTitle": "NAS / SAN Backup | Micronics Devlon",
+      "seoDescription": "Block and file storage snapshots for enterprise storage.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-21",
+      "slug": "file",
+      "title": "File",
+      "category": "Endpoints",
+      "icon": "FileCheck",
+      "shortDescription": "Fast multi-threaded file and folder backup.",
+      "body": "Dedicated protection blueprint for File. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 21,
+      "seoTitle": "File Backup | Micronics Devlon",
+      "seoDescription": "Fast multi-threaded file and folder backup.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-22",
+      "slug": "pc-mac-linux",
+      "title": "PC, Mac, Linux",
+      "category": "Endpoints",
+      "icon": "Laptop",
+      "shortDescription": "Cross-platform endpoint protection for user computers.",
+      "body": "Dedicated protection blueprint for PC, Mac, Linux. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 22,
+      "seoTitle": "PC, Mac, Linux Backup | Micronics Devlon",
+      "seoDescription": "Cross-platform endpoint protection for user computers.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-23",
+      "slug": "windows-system-state",
+      "title": "Windows System State",
+      "category": "Databases & Servers",
+      "icon": "Server",
+      "shortDescription": "Active Directory and system state bare metal recovery.",
+      "body": "Dedicated protection blueprint for Windows System State. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 23,
+      "seoTitle": "Windows System State Backup | Micronics Devlon",
+      "seoDescription": "Active Directory and system state bare metal recovery.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-24",
+      "slug": "windows-system",
+      "title": "Windows System",
+      "category": "Databases & Servers",
+      "icon": "Laptop",
+      "shortDescription": "Full disk image capture for Windows Server and client.",
+      "body": "Dedicated protection blueprint for Windows System. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 24,
+      "seoTitle": "Windows System Backup | Micronics Devlon",
+      "seoDescription": "Full disk image capture for Windows Server and client.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-25",
+      "slug": "msp-backup",
+      "title": "MSP Backup",
+      "category": "Managed Services",
+      "icon": "Users",
+      "shortDescription": "Multi-tenant console for managed service providers.",
+      "body": "Dedicated protection blueprint for MSP Backup. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 25,
+      "seoTitle": "MSP Backup Backup | Micronics Devlon",
+      "seoDescription": "Multi-tenant console for managed service providers.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-26",
+      "slug": "remote-backup",
+      "title": "Remote Backup",
+      "category": "Managed Services",
+      "icon": "Globe2",
+      "shortDescription": "Secure encrypted transfers for remote branch offices.",
+      "body": "Dedicated protection blueprint for Remote Backup. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 26,
+      "seoTitle": "Remote Backup Backup | Micronics Devlon",
+      "seoDescription": "Secure encrypted transfers for remote branch offices.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-27",
+      "slug": "online-backup",
+      "title": "Online Backup",
+      "category": "Managed Services",
+      "icon": "Cloud",
+      "shortDescription": "Automatic background protection to cloud repositories.",
+      "body": "Dedicated protection blueprint for Online Backup. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 27,
+      "seoTitle": "Online Backup Backup | Micronics Devlon",
+      "seoDescription": "Automatic background protection to cloud repositories.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-28",
+      "slug": "offsite-backup",
+      "title": "Offsite Backup",
+      "category": "Managed Services",
+      "icon": "ArchiveRestore",
+      "shortDescription": "Air-gapped secondary offsite vault protection.",
+      "body": "Dedicated protection blueprint for Offsite Backup. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 28,
+      "seoTitle": "Offsite Backup Backup | Micronics Devlon",
+      "seoDescription": "Air-gapped secondary offsite vault protection.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-29",
+      "slug": "dropbox",
+      "title": "Dropbox",
+      "category": "SaaS & Cloud",
+      "icon": "Cloud",
+      "shortDescription": "Team folder retention and rollback for Dropbox.",
+      "body": "Dedicated protection blueprint for Dropbox. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 29,
+      "seoTitle": "Dropbox Backup | Micronics Devlon",
+      "seoDescription": "Team folder retention and rollback for Dropbox.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-30",
+      "slug": "google-workspace",
+      "title": "Google Workspace",
+      "category": "SaaS & Cloud",
+      "icon": "Cloud",
+      "shortDescription": "Complete Gmail, Drive, Calendar and Contacts backup.",
+      "body": "Dedicated protection blueprint for Google Workspace. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 30,
+      "seoTitle": "Google Workspace Backup | Micronics Devlon",
+      "seoDescription": "Complete Gmail, Drive, Calendar and Contacts backup.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-31",
+      "slug": "linux-bare-metal",
+      "title": "Linux Bare Metal",
+      "category": "Databases & Servers",
+      "icon": "Server",
+      "shortDescription": "Full bare metal image restore for enterprise Linux.",
+      "body": "Dedicated protection blueprint for Linux Bare Metal. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 31,
+      "seoTitle": "Linux Bare Metal Backup | Micronics Devlon",
+      "seoDescription": "Full bare metal image restore for enterprise Linux.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-32",
+      "slug": "postgresql",
+      "title": "PostgreSQL",
+      "category": "Databases & Servers",
+      "icon": "Database",
+      "shortDescription": "WAL archiving and PITR for PostgreSQL databases.",
+      "body": "Dedicated protection blueprint for PostgreSQL. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 32,
+      "seoTitle": "PostgreSQL Backup | Micronics Devlon",
+      "seoDescription": "WAL archiving and PITR for PostgreSQL databases.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-33",
+      "slug": "proxmox-ve",
+      "title": "Proxmox VE",
+      "category": "Virtualization",
+      "icon": "Server",
+      "shortDescription": "VM and LXC container protection for Proxmox clusters.",
+      "body": "Dedicated protection blueprint for Proxmox VE. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 33,
+      "seoTitle": "Proxmox VE Backup | Micronics Devlon",
+      "seoDescription": "VM and LXC container protection for Proxmox clusters.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-34",
+      "slug": "data-center-not-exposed",
+      "title": "Data center not exposed",
+      "category": "Security",
+      "icon": "ShieldCheck",
+      "shortDescription": "Zero outbound port requirements for isolated data centers.",
+      "body": "Dedicated protection blueprint for Data center not exposed. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 34,
+      "seoTitle": "Data center not exposed Backup | Micronics Devlon",
+      "seoDescription": "Zero outbound port requirements for isolated data centers.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    },
+    {
+      "id": "platform-35",
+      "slug": "immutable-backup",
+      "title": "Immutable Backup",
+      "category": "Security",
+      "icon": "Lock",
+      "shortDescription": "WORM compliant retention locks defeating ransomware.",
+      "body": "Dedicated protection blueprint for Immutable Backup. Engineered with automated scheduling, end-to-end encryption, deduplicated storage, and instant recovery readiness.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 35,
+      "seoTitle": "Immutable Backup Backup | Micronics Devlon",
+      "seoDescription": "WORM compliant retention locks defeating ransomware.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "benefits": [
+        "Instant recovery time",
+        "Zero-trust encrypted vaults",
+        "Policy-driven automation",
+        "Compliance audit trail"
+      ]
+    }
+  ],
+  "pricingPlans": [
+    {
+      "id": "plan-starter",
+      "slug": "starter",
+      "title": "Essential Protection",
+      "shortDescription": "Ideal for growing teams needing automated backup for endpoints, SaaS apps, and local servers.",
+      "body": "Comprehensive starter package with policy automation, AES-256 encryption, and instant cloud repository sync.",
+      "icon": "ShieldCheck",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 1,
+      "seoTitle": "Starter Backup Plan",
+      "seoDescription": "Affordable data protection for small teams.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "price": "$49",
+      "cadence": "/ month",
+      "popular": false,
+      "features": [
+        "Up to 10 Workstations & Servers",
+        "Microsoft 365 & Google Workspace",
+        "AES-256 Zero-Knowledge Encryption",
+        "Daily Automated Restore Drills",
+        "Local & S3 Object Cloud Storage",
+        "Standard Email & Chat Support"
+      ]
+    },
+    {
+      "id": "plan-pro",
+      "slug": "professional",
+      "title": "Enterprise Resilience",
+      "shortDescription": "High-performance backup with immutable ransomware vaults, sub-second RTO, and VM live mount.",
+      "body": "Designed for mid-market and enterprise organizations running hybrid cloud, VMware, Hyper-V, databases, and NAS arrays.",
+      "icon": "Zap",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 2,
+      "seoTitle": "Professional Backup Plan",
+      "seoDescription": "Complete enterprise backup and recovery.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "price": "$149",
+      "cadence": "/ month",
+      "popular": true,
+      "features": [
+        "Unlimited Workloads & Endpoints",
+        "VMware, Hyper-V & Proxmox Support",
+        "SQL, Oracle & PostgreSQL Hot Backup",
+        "WORM Immutable Ransomware Lock",
+        "Sub-2s Instant VM Run Direct",
+        "Continuous Data Protection (CDP)",
+        "24/7 Emergency Incident Support"
+      ]
+    },
+    {
+      "id": "plan-msp",
+      "slug": "msp-provider",
+      "title": "MSP Multi-Tenant",
+      "shortDescription": "Complete white-label platform for MSPs, hosting providers, and multi-tenant IT service operations.",
+      "body": "Full white-label capability, custom branded installers, client billing integration, and multi-tenant administration.",
+      "icon": "Boxes",
+      "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 3,
+      "seoTitle": "MSP Multi-Tenant Backup Plan",
+      "seoDescription": "Multi-tenant backup platform for MSPs.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "price": "$299",
+      "cadence": "/ month",
+      "popular": false,
+      "features": [
+        "Multi-Tenant Centralized Console",
+        "100% White-Label & Custom Branding",
+        "Custom Branded Client Installers",
+        "RESTful API & PSA/RMM Integration",
+        "Granular Tenant Quota Controls",
+        "Automated Monthly Billing Reports",
+        "Dedicated Technical Account Manager"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-1",
+      "slug": "ransomware-immunity",
+      "title": "How does immutable backup stop ransomware?",
+      "shortDescription": "Explanation of WORM cryptographic locks",
+      "body": "Immutable backups use strict WORM (Write-Once-Read-Many) policies. Once a restore point is written, no user, script, or ransomware process can modify, delete, or overwrite the data until the designated retention period expires.",
+      "icon": "Lock",
+      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 1,
+      "seoTitle": "Immutable Backup FAQ",
+      "seoDescription": "How immutable backups protect against ransomware.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "question": "How does immutable backup protect against ransomware?",
+      "answer": "Immutable backups use strict WORM (Write-Once-Read-Many) policies. Once a restore point is written, no user, script, or ransomware process can modify, delete, or overwrite the data until the designated retention period expires.",
+      "category": "Security"
+    },
+    {
+      "id": "faq-2",
+      "slug": "instant-restore-speed",
+      "title": "What is sub-second recovery (RTO)?",
+      "shortDescription": "Details on VM Run Direct and instant mounting",
+      "body": "Instead of copying hundreds of gigabytes over the network before booting, our instant recovery mounts the backup repository directly to your hypervisor as an active datastore, booting your virtual machine in seconds.",
+      "icon": "Zap",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 2,
+      "seoTitle": "Instant Recovery FAQ",
+      "seoDescription": "How instant VM Run Direct works.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "question": "How does instant sub-second recovery (RTO) work?",
+      "answer": "Instead of copying hundreds of gigabytes over the network before booting, our instant recovery mounts the backup repository directly to your hypervisor as an active datastore, booting your virtual machine in seconds.",
+      "category": "Performance"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "testimonial-1",
+      "slug": "sarah-jenkins-fintech",
+      "title": "FinTech Enterprise Review",
+      "shortDescription": "Review from VP of IT Infrastructure",
+      "body": "Review content",
+      "icon": "Star",
+      "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 1,
+      "seoTitle": "Customer Testimonial",
+      "seoDescription": "Customer review",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "quote": "Micronics Devlon replaced three disparate legacy backup tools with one ultra-fast, unified platform. When a ransomware test was conducted, our immutable vaults restored our entire PostgreSQL cluster in under 90 seconds.",
+      "person": "Sarah Jenkins",
+      "company": "VP of Infrastructure, Apex Global Fintech"
+    },
+    {
+      "id": "testimonial-2",
+      "slug": "marcus-vance-msp",
+      "title": "MSP Provider Review",
+      "shortDescription": "Review from MSP Operations Director",
+      "body": "Review content",
+      "icon": "Star",
+      "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 2,
+      "seoTitle": "Customer Testimonial",
+      "seoDescription": "Customer review",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "quote": "The multi-tenant management and white-label installers allowed us to onboard 60+ business clients in our first quarter. The automated restore verification gives our clients verifiable proof of their recovery readiness.",
+      "person": "Marcus Vance",
+      "company": "Director of Managed Services, BlueCloud MSP"
+    }
+  ],
+  "posts": [
+    {
+      "id": "post-1",
+      "slug": "ransomware-recovery-playbook-2026",
+      "title": "The 2026 Ransomware Recovery Playbook for IT Administrators",
+      "shortDescription": "A step-by-step technical guide to structuring air-gapped repositories and automated restore verification drills.",
+      "body": "In today's threat landscape, traditional backups are target number one for sophisticated ransomware strains. Learn how to architect true immutability, isolate administrative privileges, and ensure your team can recover clean databases in minutes.",
+      "icon": "FileCheck",
+      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=2200&q=85",
+      "status": "published",
+      "order": 1,
+      "seoTitle": "Ransomware Recovery Playbook",
+      "seoDescription": "Technical guide to ransomware data recovery.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "category": "Security Guide",
+      "readTime": "6 min read"
+    },
+    {
+      "id": "post-2",
+      "slug": "microsoft-365-retention-myths",
+      "title": "5 Critical Misconceptions About Microsoft 365 Native Retention",
+      "shortDescription": "Why built-in recycle bins and retention policies are not a substitute for an independent backup program.",
+      "body": "Microsoft operates under a shared responsibility model. While Microsoft ensures service availability and infrastructure uptime, customer data protection, accidental deletion recovery, and ransomware remediation remain entirely your responsibility.",
+      "icon": "Cloud",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 2,
+      "seoTitle": "Microsoft 365 Backup Guide",
+      "seoDescription": "Understanding Microsoft 365 data protection.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "category": "Cloud Architecture",
+      "readTime": "5 min read"
+    },
+    {
+      "id": "post-3",
+      "slug": "optimizing-vm-backup-deduplication",
+      "title": "Maximizing VM Backup Speed with Variable-Block Deduplication",
+      "shortDescription": "How global deduplication algorithms reduce storage footprint and WAN network bandwidth by up to 90%.",
+      "body": "Virtual machine environments share massive amounts of identical OS blocks and application binaries. Learn how variable block-level deduplication accelerates daily incremental runs and keeps storage costs predictable.",
+      "icon": "Database",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=85",
+      "status": "published",
+      "order": 3,
+      "seoTitle": "VM Backup Deduplication",
+      "seoDescription": "Guide to variable-block backup deduplication.",
+      "createdAt": "2026-09-21T12:00:00.000Z",
+      "updatedAt": "2026-09-21T12:00:00.000Z",
+      "category": "Engineering",
+      "readTime": "8 min read"
+    }
+  ],
+  "leads": [
+    {
+      "id": "lead-1",
+      "type": "trial",
+      "name": "David Sterling",
+      "email": "david.sterling@sterlingtech.io",
+      "company": "Sterling Financial Tech",
+      "message": "Looking to deploy immutable backup for 120 VMs and 450 Microsoft 365 mailboxes.",
+      "status": "new",
+      "notes": "Follow up regarding VMware vSphere and S3 Object Lock.",
+      "createdAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "lead-2",
+      "type": "demo",
+      "name": "Elena Rostova",
+      "email": "elena@vertexmsp.com",
+      "company": "Vertex Managed Cloud",
+      "message": "Interested in white-label MSP branding and custom CBS installers.",
+      "status": "qualified",
+      "notes": "Demo scheduled for Wednesday 2 PM EST.",
+      "createdAt": "2026-09-21T12:00:00.000Z"
+    }
+  ],
+  "newsletter": [
+    {
+      "id": "sub-1",
+      "email": "admin@globaltech.net",
+      "createdAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "sub-2",
+      "email": "secops@cybervault.io",
+      "createdAt": "2026-09-21T12:00:00.000Z"
+    }
+  ],
+  "media": [
+    {
+      "id": "media-1",
+      "name": "Data Center Infrastructure",
+      "url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2200&q=85",
+      "type": "image/jpeg",
+      "createdAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "media-2",
+      "name": "Cybersecurity Vault",
+      "url": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=2200&q=85",
+      "type": "image/jpeg",
+      "createdAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "media-3",
+      "name": "Operations Command Center",
+      "url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85",
+      "type": "image/jpeg",
+      "createdAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "media-4",
+      "name": "Engineering Team",
+      "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=2200&q=85",
+      "type": "image/jpeg",
+      "createdAt": "2026-09-21T12:00:00.000Z"
+    }
+  ],
+  "settings": {
+    "companyName": "Micronics Devlon",
+    "tagline": "Enterprise Backup, Disaster Recovery & Data Protection",
+    "contactEmail": "hello@micronicsdevlon.com",
+    "phone": "+1 (555) 014-2026",
+    "address": "Los Angeles, CA",
+    "footerText": "Resilient backup operations for modern infrastructure. Protect cloud applications, virtual machines, databases, NAS storage, and endpoints with sub-second restore confidence.",
+    "defaultTheme": "light",
+    "maintenanceMode": false,
+    "socials": [
+      {
+        "label": "LinkedIn",
+        "url": "https://linkedin.com"
+      },
+      {
+        "label": "Twitter / X",
+        "url": "https://x.com"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://youtube.com"
+      }
+    ]
+  },
+  "users": [
+    {
+      "id": "user-1",
+      "name": "Admin Lead",
+      "email": "admin@micronicsdevlon.com",
+      "role": "Owner",
+      "active": true,
+      "createdAt": "2026-09-21T12:00:00.000Z"
+    },
+    {
+      "id": "user-2",
+      "name": "Demo Specialist",
+      "email": "demo@micronicsdevlon.com",
+      "role": "Admin",
+      "active": true,
+      "createdAt": "2026-09-21T12:00:00.000Z"
+    }
+  ],
+  "activity": [
+    {
+      "id": "act-1",
+      "actor": "System",
+      "action": "Initialized Catalog",
+      "target": "All 35+ Workloads, Solutions, Features, Services",
+      "createdAt": "2026-09-21T12:00:00.000Z"
+    }
+  ]
+}
