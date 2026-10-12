@@ -212,9 +212,23 @@ export function Footer() {
 
         {/* Bottom Copyright & Certification */}
         <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            © Copyright 2015 – {new Date().getFullYear()} | Micronics Devlon Data Private Limited | All Rights Reserved
-          </p>
+          <div className="flex flex-wrap items-center gap-y-1 gap-x-2">
+            <span>
+              © Copyright {new Date().getFullYear()} | Micronics Devlon Data Private Limited | All Rights Reserved
+            </span>
+            <span className="hidden sm:inline text-slate-600">•</span>
+            <span>
+              Developed by{" "}
+              <a
+                href="https://technoadviser.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-orange-400 underline underline-offset-2 transition-colors font-medium"
+              >
+                Technoadviser
+              </a>
+            </span>
+          </div>
           <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-slate-500">
             <span>SOC-2 Type II Certified</span>
             <span>•</span>

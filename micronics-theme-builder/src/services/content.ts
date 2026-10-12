@@ -4,7 +4,10 @@ import { FRONTEND_CONTENT_OVERRIDES } from "@/data/overrides";
 const STORAGE_KEY = "micronics-devlon-data-v3";
 const AUTH_KEY = "micronics-devlon-admin-auth";
 const CHANGE_EVENT = "micronics-data-change";
-const API_BASE = "http://127.0.0.1:8000/api";
+const API_BASE =
+  typeof window !== "undefined"
+    ? `http://${window.location.hostname}:8000/api`
+    : "http://127.0.0.1:8000/api";
 
 export type EditableCollection = AppData[ContentType];
 export type EditableItem = EditableCollection[number];

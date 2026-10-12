@@ -82,7 +82,6 @@ export function Header() {
       <div className="mx-auto flex h-20 max-w-7xl 2xl:max-w-[1536px] items-center justify-between px-4 sm:px-6 lg:px-8">
         <Logo
           logoUrl={data.settings.brandLogo}
-          logoSize={data.settings.brandLogoSize}
           brandName={data.settings.brandName || data.settings.companyName}
           brandSubtitle={data.settings.brandSubtitle || "DATA PRIVATE LIMITED"}
         />
@@ -561,7 +560,6 @@ export function Header() {
               <div className="flex items-center justify-between border-b border-border/80 p-4">
                 <Logo
                   logoUrl={data.settings.brandLogo}
-                  logoSize={data.settings.brandLogoSize}
                   brandName={data.settings.brandName || data.settings.companyName}
                   brandSubtitle={data.settings.brandSubtitle || "DATA PRIVATE LIMITED"}
                 />

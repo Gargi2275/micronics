@@ -3585,7 +3585,7 @@
     "address": "Los Angeles, CA",
     "footerText": "Resilient backup operations for modern infrastructure. Protect cloud applications, virtual machines, databases, NAS storage, and endpoints with sub-second restore confidence.",
     "defaultTheme": "light",
-    "brandLogo": "/images/logo.png",
+    "brandLogo": "/images/logo_hd.png",
     "maintenanceMode": false,
     "socials": [
       {
@@ -3606,7 +3606,8 @@
       }
     ],
     "brandName": "Micronics Devlon",
-    "brandSubtitle": "DATA PRIVATE LIMITED"
+    "brandSubtitle": "DATA PRIVATE LIMITED",
+    "brandLogoSize": 58
   },
   "users": [
     {
