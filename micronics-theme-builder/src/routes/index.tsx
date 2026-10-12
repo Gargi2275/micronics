@@ -34,9 +34,9 @@ import { useTheme } from "@/lib/theme";
 export const Route = createFileRoute("/")({
   head: () =>
     seo({
-      title: "Micronics Devlon | Enterprise Backup, Disaster Recovery & Data Protection",
+      title: "Cloud Data Backup Software & Disaster Recovery Solutions | Micronics Devlon",
       description:
-        "Modern, recovery-first data protection platform for Cloud SaaS, Virtual Machines, Databases, NAS, and Endpoints.",
+        "Protect your enterprise with CrestVault™️, a deeply integrated cloud data backup software and disaster recovery platform. We deliver automated ransomware protection, immutable storage, and instant recovery for servers, Tally, and PCs.",
     }),
   component: HomePage,
 });

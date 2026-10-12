@@ -10,6 +10,7 @@ import { LeadForm, NewsletterForm } from "@/components/site/forms";
 import { useAppData } from "@/lib/useAppData";
 import { listPublished } from "@/services/content";
 import { iconMap, imageBank, initialData, type AppData, type BaseItem, type Blog, type Product, type Service, type Solution, type Platform, type ResourcePost } from "@/data/mock";
+import { FRONTEND_CONTENT_OVERRIDES } from "@/data/overrides";
 import { cn } from "@/lib/utils";
 
 
@@ -37,9 +38,17 @@ export function ServicesPage() {
   return (
     <>
       <PageHero
-        title="Services that make recovery operational"
+        title={
+          <>
+            Managed BaaS &amp; Cloud Data{" "}
+            <span className="gradient-text">Backup Services</span>
+            <span className="mt-2.5 block text-lg sm:text-xl font-bold tracking-normal text-muted-foreground/90">
+              <span className="text-primary/70 font-light mr-2">|</span>Micronics Devlon
+            </span>
+          </>
+        }
         eyebrow="Services"
-        description="Implementation, managed backup and white-label support for teams that need dependable outcomes."
+        description="Explore Micronics Devlon's enterprise cloud data backup services. From self-managed cloud vaults to 24/7 Managed Backup-as-a-Service (MBaaS) with guaranteed Recovery SLAs. Secure your Tally and SQL databases with AES-256 encryption."
         image={imageBank.team}
         crumbs={[{ label: "Services" }]}
       />
@@ -717,14 +726,19 @@ export function DetailPage({
   const maybeProduct = item as Product;
   const maybeService = item as Service;
 
+  const override = item.slug ? FRONTEND_CONTENT_OVERRIDES[item.slug] : undefined;
+  const displayTitle = override?.title ?? item.title;
+  const displayDescription = override?.description ?? item.shortDescription;
+  const displayBody = override?.description ?? item.body;
+
   return (
     <>
       <PageHero
-        title={section === "backup" ? `Backup for ${item.title}` : item.title}
+        title={section === "backup" ? `Backup for ${displayTitle}` : displayTitle}
         eyebrow={section}
-        description={item.shortDescription}
+        description={displayDescription}
         image={item.image}
-        crumbs={[{ label: section, to: parentPath }, { label: item.title }]}
+        crumbs={[{ label: section, to: parentPath }, { label: displayTitle }]}
       />
       <Section>
         <div className="grid gap-10 lg:grid-cols-[1fr_360px]">
@@ -761,11 +775,21 @@ export function DetailPage({
               <div className="flex size-14 items-center justify-center rounded-2xl bg-primary/10 text-primary border border-primary/20 mb-6">
                 <Icon className="size-8" />
               </div>
-              <h2 className="font-display text-3xl sm:text-4xl font-black tracking-tight text-foreground">
-                {item.title}
+              <h2 className="font-display text-2xl sm:text-3xl font-black tracking-tight text-foreground">
+                {displayTitle.includes(" | ") ? (
+                  <>
+                    <span>{displayTitle.split(" | ")[0]}</span>
+                    <span className="mt-2 block text-lg sm:text-xl font-bold text-muted-foreground/90">
+                      <span className="text-primary/70 font-light mr-2">|</span>
+                      {displayTitle.split(" | ").slice(1).join(" | ")}
+                    </span>
+                  </>
+                ) : (
+                  displayTitle
+                )}
               </h2>
               <p className="mt-5 text-base sm:text-lg leading-relaxed text-muted-foreground">
-                {item.body}
+                {displayBody}
               </p>
             </section>
 

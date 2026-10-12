@@ -2,6 +2,7 @@ import { createFileRoute, notFound } from "@tanstack/react-router";
 import { DetailPage } from "@/components/site/ListPages";
 import { getAppData } from "@/services/content";
 import { seo } from "@/lib/seo";
+import { FRONTEND_CONTENT_OVERRIDES } from "@/data/overrides";
 
 export const Route = createFileRoute("/services/$slug")({
   loader: ({ params }) => {
@@ -9,7 +10,14 @@ export const Route = createFileRoute("/services/$slug")({
     if (!item) throw notFound();
     return item;
   },
-  head: ({ loaderData }) => seo({ title: loaderData?.seoTitle ?? "Service | Micronics Devlon", description: loaderData?.seoDescription ?? "Micronics Devlon backup service.", image: loaderData?.image }),
+  head: ({ loaderData, params }) => {
+    const override = params.slug ? FRONTEND_CONTENT_OVERRIDES[params.slug] : undefined;
+    return seo({
+      title: override?.title ?? loaderData?.seoTitle ?? "Service | Micronics Devlon",
+      description: override?.description ?? loaderData?.seoDescription ?? "Micronics Devlon backup service.",
+      image: loaderData?.image,
+    });
+  },
   component: ServiceDetailRoute,
 });
 

@@ -9,7 +9,7 @@ export function PageHero({
   image = imageBank.servers,
   crumbs = [],
 }: {
-  title: string;
+  title: React.ReactNode;
   eyebrow?: string;
   description: string;
   image?: string;
@@ -63,11 +63,21 @@ export function PageHero({
           </span>
         )}
 
-        <h1 className="max-w-4xl font-display text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.12] tracking-tight text-foreground dark:text-white">
-          {title}
+        <h1 className="max-w-4xl font-display text-3xl sm:text-4xl lg:text-5xl font-black leading-[1.14] tracking-tight text-foreground dark:text-white">
+          {typeof title === "string" && title.includes(" | ") ? (
+            <>
+              <span>{title.split(" | ")[0]}</span>
+              <span className="mt-2.5 block text-xl sm:text-2xl lg:text-3xl font-bold tracking-normal text-muted-foreground/90">
+                <span className="text-primary/70 font-light mr-2">|</span>
+                {title.split(" | ").slice(1).join(" | ")}
+              </span>
+            </>
+          ) : (
+            title
+          )}
         </h1>
 
-        <p className="mt-4 max-w-2xl text-base sm:text-lg leading-relaxed text-muted-foreground dark:text-slate-300 font-normal">
+        <p className="mt-4 max-w-3xl text-base sm:text-lg leading-relaxed text-muted-foreground dark:text-slate-300 font-normal">
           {description}
         </p>
       </div>

@@ -6,9 +6,9 @@ import { imageBank } from "@/data/mock";
 export const Route = createFileRoute("/services/")({
   head: () =>
     seo({
-      title: "Backup Services | Micronics Devlon",
+      title: "Managed BaaS & Cloud Data Backup Services | Micronics Devlon",
       description:
-        "Managed backup, implementation, key recovery, server upgrades and white-label backup services.",
+        "Explore Micronics Devlon's enterprise cloud data backup services. From self-managed cloud vaults to 24/7 Managed Backup-as-a-Service (MBaaS) with guaranteed Recovery SLAs. Secure your Tally and SQL databases with AES-256 encryption.",
       image: imageBank.team,
     }),
   component: ServicesPage,

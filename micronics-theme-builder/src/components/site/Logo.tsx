@@ -76,10 +76,10 @@ export function Logo({
         />
       ) : isWhite ? <BrandMark className="text-white" /> : <BrandMark />}
       {!compact && (
-        <span className="flex min-w-0 flex-col leading-tight">
+        <span className="flex shrink-0 flex-col leading-tight">
           <span
             className={cn(
-              "truncate font-display text-lg font-black tracking-tight transition-colors",
+              "whitespace-nowrap font-display text-base sm:text-lg font-black tracking-tight transition-colors",
               isWhite
                 ? "text-white group-hover:text-amber-300"
                 : isPrimary
@@ -91,7 +91,7 @@ export function Logo({
           </span>
           <span
             className={cn(
-              "truncate text-[10px] font-bold uppercase tracking-widest",
+              "whitespace-nowrap text-[10px] font-bold uppercase tracking-widest",
               isWhite ? "text-slate-300" : "text-muted-foreground"
             )}
           >

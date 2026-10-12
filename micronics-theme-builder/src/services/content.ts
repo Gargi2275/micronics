@@ -1,6 +1,7 @@
 import { initialData, type AppData, type ContentType, type Lead, type NewsletterSubscriber, type Status } from "@/data/mock";
+import { FRONTEND_CONTENT_OVERRIDES } from "@/data/overrides";
 
-const STORAGE_KEY = "micronics-devlon-data-v2";
+const STORAGE_KEY = "micronics-devlon-data-v3";
 const AUTH_KEY = "micronics-devlon-admin-auth";
 const CHANGE_EVENT = "micronics-data-change";
 const API_BASE = "http://127.0.0.1:8000/api";
@@ -12,8 +13,29 @@ export function slugify(value: string) {
   return value.toLowerCase().trim().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "item";
 }
 
+function applyFrontendOverrides(data: AppData): AppData {
+  if (!data) return data;
+  const collections: (keyof AppData)[] = ["products", "services", "solutions"];
+  for (const col of collections) {
+    const list = data[col];
+    if (Array.isArray(list)) {
+      for (const item of list as any[]) {
+        if (item?.slug && FRONTEND_CONTENT_OVERRIDES[item.slug]) {
+          const ov = FRONTEND_CONTENT_OVERRIDES[item.slug];
+          item.title = ov.title;
+          item.shortDescription = ov.description;
+          item.body = ov.description;
+          item.seoTitle = ov.title;
+          item.seoDescription = ov.description;
+        }
+      }
+    }
+  }
+  return data;
+}
+
 function cloneInitial(): AppData {
-  return JSON.parse(JSON.stringify(initialData)) as AppData;
+  return applyFrontendOverrides(JSON.parse(JSON.stringify(initialData)) as AppData);
 }
 
 function canStore() {
@@ -30,14 +52,14 @@ export function isBackendConnected() {
 }
 
 export function getServerAppData(): AppData {
-  return serverSnapshot;
+  return applyFrontendOverrides(serverSnapshot);
 }
 
 export async function fetchFromBackend(): Promise<AppData | null> {
   try {
     const res = await fetch(`${API_BASE}/app-data/`);
     if (res.ok) {
-      const data = (await res.json()) as AppData;
+      const data = applyFrontendOverrides((await res.json()) as AppData);
       backendConnected = true;
       Object.assign(serverSnapshot, data);
       clientSnapshot = data;
@@ -60,8 +82,8 @@ if (!isSyncing) {
 }
 
 export function getAppData(): AppData {
-  if (!canStore()) return serverSnapshot;
-  if (clientSnapshot !== null) return clientSnapshot;
+  if (!canStore()) return applyFrontendOverrides(serverSnapshot);
+  if (clientSnapshot !== null) return applyFrontendOverrides(clientSnapshot);
 
   const raw = window.localStorage.getItem(STORAGE_KEY);
   if (!raw) {
@@ -72,7 +94,7 @@ export function getAppData(): AppData {
   }
   try {
     const parsed = JSON.parse(raw) as Partial<AppData>;
-    clientSnapshot = { ...cloneInitial(), ...parsed } as AppData;
+    clientSnapshot = applyFrontendOverrides({ ...cloneInitial(), ...parsed } as AppData);
     fetchFromBackend().catch(() => undefined);
     return clientSnapshot;
   } catch {
