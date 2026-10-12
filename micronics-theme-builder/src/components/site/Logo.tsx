@@ -3,37 +3,12 @@ import { cn } from "@/lib/utils";
 
 export function BrandMark({ className }: { className?: string }) {
   return (
-    <svg
-      className={cn("h-9 w-9 shrink-0 transition-transform duration-300 group-hover:scale-105", className)}
-      viewBox="0 0 64 64"
-      role="img"
-      aria-label="Micronics Devlon logo"
-    >
-      <defs>
-        <linearGradient id="md-blue" x1="10" x2="54" y1="52" y2="12">
-          <stop stopColor="#3b82f6" />
-          <stop offset="1" stopColor="#6366f1" />
-        </linearGradient>
-        <linearGradient id="md-orange" x1="7" x2="58" y1="52" y2="8">
-          <stop stopColor="#f59e0b" />
-          <stop offset="1" stopColor="#ea580c" />
-        </linearGradient>
-      </defs>
-      <circle cx="32" cy="32" r="30" fill="none" stroke="url(#md-blue)" strokeWidth="3" opacity="0.4" />
-      <path
-        fill="none"
-        stroke="url(#md-orange)"
-        strokeWidth="5"
-        strokeLinecap="round"
-        d="M14 44a22 22 0 1 1 35 1"
-      />
-      <path fill="url(#md-orange)" d="M47 18.5 57 16l-2.3 9.5Z" />
-      <path
-        fill="currentColor"
-        d="M17 46V21h7.5l6.5 11 6.5-11H45v25h-6.5V32.5L33 41.5h-4L23.5 32.5V46Z"
-      />
-      <path fill="url(#md-blue)" d="M24 21h4.5l2.8 5.5 2.8-5.5H38L31.3 33.5Z" />
-    </svg>
+    <img
+      src="/images/brandmark.png"
+      alt="Micronics Devlon"
+      className={cn("h-9 sm:h-10 w-auto object-contain shrink-0", className)}
+      loading="eager"
+    />
   );
 }
 
@@ -43,9 +18,9 @@ export function Logo({
   className,
   variant = "default",
   logoUrl,
-  logoSize = 36,
-  brandName,
-  brandSubtitle,
+  logoSize,
+  brandName = "Micronics Devlon",
+  brandSubtitle = "DATA PRIVATE LIMITED",
 }: {
   compact?: boolean;
   to?: string;
@@ -57,47 +32,78 @@ export function Logo({
   brandSubtitle?: string;
 }) {
   const isWhite = variant === "white" || className?.includes("text-white");
-  const isPrimary = className?.includes("text-primary");
+  const isCustomLogo =
+    Boolean(logoUrl) &&
+    logoUrl !== "/images/logo.png" &&
+    logoUrl !== "/images/brandmark.png";
 
   return (
     <Link
       to={to}
       className={cn(
-        "group inline-flex min-w-0 max-w-full items-center gap-3 overflow-hidden rounded-xl px-1 py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+        "group inline-flex items-center gap-3 select-none rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring transition-transform hover:opacity-95 shrink-0",
         className
       )}
     >
-      {logoUrl ? (
+      {/* 1. If custom uploaded logo image is provided, display it */}
+      {isCustomLogo ? (
         <img
           src={logoUrl}
-          alt={`${brandName ?? "Brand"} logo`}
-          className="shrink-0 rounded-lg object-contain"
-          style={{ width: `${logoSize}px`, height: `${logoSize}px` }}
+          alt={brandName ?? "Micronics Devlon"}
+          style={logoSize ? { height: `${logoSize}px` } : undefined}
+          className={cn(
+            "object-contain transition-transform duration-200 group-hover:scale-[1.02]",
+            compact ? "h-8 w-auto max-w-[140px]" : "h-10 sm:h-11 w-auto max-w-[240px]"
+          )}
         />
-      ) : isWhite ? <BrandMark className="text-white" /> : <BrandMark />}
-      {!compact && (
-        <span className="flex shrink-0 flex-col leading-tight">
-          <span
+      ) : (
+        /* 2. Official High-DPI Hybrid Lockup: Crystal-Sharp Brandmark + Vector Typography */
+        <div className="flex items-center gap-2.5 sm:gap-3 shrink-0">
+          <img
+            src="/images/brandmark.png"
+            alt={brandName ?? "Micronics Devlon"}
             className={cn(
-              "whitespace-nowrap font-display text-base sm:text-lg font-black tracking-tight transition-colors",
-              isWhite
-                ? "text-white group-hover:text-amber-300"
-                : isPrimary
-                  ? "text-primary group-hover:text-primary"
-                  : "text-foreground group-hover:text-primary"
+              "object-contain shrink-0 transition-transform duration-200 group-hover:scale-105 drop-shadow-[0_1px_2px_rgba(0,0,0,0.06)]",
+              compact
+                ? "h-8 w-auto"
+                : "h-10 sm:h-11 xl:h-12 w-auto"
             )}
-          >
-            {brandName ?? "Micronics Devlon"}
-          </span>
-          <span
-            className={cn(
-              "whitespace-nowrap text-[10px] font-bold uppercase tracking-widest",
-              isWhite ? "text-slate-300" : "text-muted-foreground"
-            )}
-          >
-            {brandSubtitle ?? "Data Protection"}
-          </span>
-        </span>
+            loading="eager"
+          />
+
+          {!compact && (
+            <div className="flex flex-col justify-center leading-none tracking-normal min-w-0 pt-0.5 sm:pt-1">
+              <div className="flex items-baseline tracking-tight font-black leading-none font-sans">
+                <span
+                  className={cn(
+                    "text-[1.12rem] sm:text-[1.26rem] xl:text-[1.32rem] tracking-[-0.03em] font-extrabold transition-colors",
+                    isWhite
+                      ? "text-white"
+                      : "text-slate-900 dark:text-white"
+                  )}
+                >
+                  MICRONICS
+                </span>
+                <span className="ml-1 sm:ml-1.5 text-[1.12rem] sm:text-[1.26rem] xl:text-[1.32rem] tracking-[-0.02em] font-extrabold text-orange-600 dark:text-orange-500">
+                  DEVLON
+                </span>
+              </div>
+
+              <div className="flex items-center gap-1.5 mt-1 sm:mt-1.5">
+                <span
+                  className={cn(
+                    "text-[8px] sm:text-[9px] xl:text-[9.5px] font-bold tracking-[0.24em] uppercase leading-none transition-colors",
+                    isWhite
+                      ? "text-slate-300/90"
+                      : "text-slate-500 dark:text-slate-400"
+                  )}
+                >
+                  {brandSubtitle || "DATA PRIVATE LIMITED"}
+                </span>
+              </div>
+            </div>
+          )}
+        </div>
       )}
     </Link>
   );

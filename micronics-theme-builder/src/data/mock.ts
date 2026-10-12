@@ -301,6 +301,8 @@ export const initialData: AppData = {
   media: [],
   settings: {
     companyName: "Micronics Devlon",
+    brandName: "Micronics Devlon",
+    brandLogo: "/images/logo.png",
     tagline: "Enterprise Backup, Disaster Recovery & Data Protection",
     contactEmail: "hello@micronicsdevlon.com",
     phone: "+1 (555) 014-2026",
@@ -387,7 +389,7 @@ heroDestinations: [
 brandLogo: "",
 brandLogoSize: 36,
 brandName: "Micronics Devlon",
-brandSubtitle: "Data Protection",
+brandSubtitle: "DATA PRIVATE LIMITED",
 defaultTheme: "light",
     maintenanceMode: false,
     socials: [

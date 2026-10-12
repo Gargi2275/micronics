@@ -191,7 +191,7 @@ export function AdminShell({
             logoUrl={data.settings.brandLogo}
             logoSize={32}
             brandName={data.settings.brandName || data.settings.companyName}
-            brandSubtitle={data.settings.brandSubtitle || "Data Protection"}
+            brandSubtitle={data.settings.brandSubtitle || "DATA PRIVATE LIMITED"}
             className="min-w-0 flex-1 text-primary hover:text-primary"
           />
           <Button
