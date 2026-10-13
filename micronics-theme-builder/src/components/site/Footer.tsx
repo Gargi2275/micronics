@@ -164,14 +164,11 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom Copyright & Admin Link */}
+        {/* Bottom Copyright & Certification */}
         <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
           <p>© Copyright 2015 – {new Date().getFullYear()} | TECHNOADVISER TECHNOLOGIES PRIVATE LIMITED | All Rights Reserved</p>
           <div className="flex items-center gap-6">
             <span className="text-slate-500">SOC-2 Type II Certified • ISO 27001</span>
-            <Link to="/admin" className="text-slate-400 hover:text-amber-400 transition-colors">
-              Admin Portal →
-            </Link>
           </div>
         </div>
       </div>

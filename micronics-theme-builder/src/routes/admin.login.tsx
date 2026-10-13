@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { ArrowLeft, CheckCircle2, Eye, EyeOff, KeyRound, LockKeyhole, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Eye, EyeOff, ShieldCheck } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -13,15 +13,15 @@ export const Route = createFileRoute("/admin/login")({
   head: () =>
     seo({
       title: "Admin Login | Micronics Devlon",
-      description: "Demo admin portal login for Micronics Devlon content management.",
+      description: "Admin portal login for Micronics Devlon content management.",
     }),
   component: AdminLogin,
 });
 
 function AdminLogin() {
   const navigate = useNavigate();
-  const [email, setEmail] = useState("admin@micronicsdevlon.com");
-  const [password, setPassword] = useState("Admin123!");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -34,23 +34,10 @@ function AdminLogin() {
         toast.success("Welcome back! Signed in to Admin Console.");
         navigate({ to: "/admin", replace: true });
       } else {
-        toast.error("Invalid credentials. Please use demo credentials.", {
-          description: "Email: admin@micronicsdevlon.com | Password: Admin123!",
-        });
+        toast.error("Invalid email or password. Please try again.");
         setIsLoading(false);
       }
     }, 250);
-  };
-
-  const handleQuickDemoSignIn = () => {
-    setEmail("admin@micronicsdevlon.com");
-    setPassword("Admin123!");
-    setIsLoading(true);
-    setTimeout(() => {
-      login("admin@micronicsdevlon.com", "Admin123!");
-      toast.success("1-Click Demo Login Successful!");
-      navigate({ to: "/admin", replace: true });
-    }, 200);
   };
 
   return (
@@ -90,39 +77,8 @@ function AdminLogin() {
               Admin Portal
             </h1>
             <p className="text-sm text-muted-foreground">
-              Manage website content, leads, media and demo settings.
+              Manage website content, leads, media and settings.
             </p>
-          </div>
-
-          {/* 1-Click Demo Login Box */}
-          <div className="mt-6 rounded-2xl border border-accent/25 bg-accent/5 p-4 text-xs">
-            <div className="flex items-center justify-between mb-2">
-              <span className="flex items-center gap-1.5 font-bold text-accent uppercase tracking-wider text-[11px]">
-                <Sparkles className="size-3.5" /> Demo Credentials
-              </span>
-              <span className="text-[11px] font-medium text-muted-foreground">Local storage</span>
-            </div>
-            <div className="grid grid-cols-2 gap-2 text-muted-foreground font-mono bg-background/60 p-2.5 rounded-xl border border-border/60 mb-3">
-              <div>
-                <span className="block text-[10px] uppercase font-sans text-muted-foreground/80 font-bold">Email</span>
-                <span className="text-foreground truncate block select-all">admin@micronicsdevlon.com</span>
-              </div>
-              <div>
-                <span className="block text-[10px] uppercase font-sans text-muted-foreground/80 font-bold">Password</span>
-                <span className="text-foreground block select-all">Admin123!</span>
-              </div>
-            </div>
-            <Button
-              type="button"
-              variant="outline"
-              size="sm"
-              onClick={handleQuickDemoSignIn}
-              disabled={isLoading}
-              className="w-full font-bold border-accent/30 text-accent hover:bg-accent hover:text-accent-foreground transition-all shadow-sm"
-            >
-              <KeyRound className="size-3.5 mr-1.5" />
-              1-Click Demo Sign In
-            </Button>
           </div>
 
           {/* Form */}
@@ -136,7 +92,7 @@ function AdminLogin() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="admin@micronicsdevlon.com"
+                placeholder="name@company.com"
                 className="h-11 rounded-xl bg-background text-foreground border-border focus-visible:ring-2 focus-visible:ring-primary font-medium"
               />
             </div>
@@ -179,7 +135,7 @@ function AdminLogin() {
           {/* Bottom Security Note */}
           <div className="mt-6 pt-5 border-t border-border flex items-center justify-center gap-2 text-xs text-muted-foreground">
             <CheckCircle2 className="size-3.5 text-success" />
-            <span>End-to-end encrypted demo session</span>
+            <span>End-to-end encrypted session</span>
           </div>
         </div>
       </div>
