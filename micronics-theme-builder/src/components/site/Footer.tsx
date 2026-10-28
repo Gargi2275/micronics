@@ -67,7 +67,11 @@ export function Footer() {
           {/* Brand & Newsletter Column */}
           <div className="flex flex-col justify-between space-y-6">
             <div>
-              <Logo variant="white" />
+              <Logo
+                variant="white"
+                logoUrl={data.settings.brandLogo}
+                logoSize={data.settings.brandLogoSize ? Math.min(data.settings.brandLogoSize, 52) : 48}
+              />
               <p className="mt-4 text-sm leading-relaxed text-slate-400 max-w-sm">
                 {data.settings.footerText ||
                   "Resilient backup operations for modern infrastructure. Protect cloud applications, virtual machines, databases, NAS storage, and endpoints with sub-second restore confidence."}

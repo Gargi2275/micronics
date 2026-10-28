@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 
@@ -10,6 +11,74 @@ export function BrandMark({ className }: { className?: string }) {
       loading="eager"
     />
   );
+}
+
+// Hook that generates a high-contrast light-mode version if an uploaded logo has white text
+function useAdaptiveLogo(logoUrl?: string) {
+  const [lightLogo, setLightLogo] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!logoUrl || typeof window === "undefined") {
+      setLightLogo(null);
+      return;
+    }
+
+    if (logoUrl.includes("_light.")) {
+      setLightLogo(logoUrl);
+      return;
+    }
+
+    const img = new Image();
+    img.crossOrigin = "anonymous";
+    img.onload = () => {
+      try {
+        const canvas = document.createElement("canvas");
+        canvas.width = img.width;
+        canvas.height = img.height;
+        const ctx = canvas.getContext("2d");
+        if (!ctx) {
+          setLightLogo(logoUrl);
+          return;
+        }
+
+        ctx.drawImage(img, 0, 0);
+        const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const data = imgData.data;
+        let whiteCount = 0;
+
+        for (let i = 0; i < data.length; i += 4) {
+          const a = data[i + 3];
+          if (a > 20) {
+            const r = data[i];
+            const g = data[i + 1];
+            const b = data[i + 2];
+            const isOrange = r > 160 && g < 140 && b < 80;
+            const isWhiteOrLight = r > 165 && g > 165 && b > 165;
+            if (isWhiteOrLight && !isOrange) {
+              whiteCount++;
+              // Deep corporate navy (#0f172a) for maximum contrast on light backgrounds
+              data[i] = 15;
+              data[i + 1] = 23;
+              data[i + 2] = 42;
+            }
+          }
+        }
+
+        if (whiteCount > 30) {
+          ctx.putImageData(imgData, 0, 0);
+          setLightLogo(canvas.toDataURL("image/png"));
+        } else {
+          setLightLogo(logoUrl);
+        }
+      } catch (err) {
+        setLightLogo(logoUrl);
+      }
+    };
+    img.onerror = () => setLightLogo(logoUrl);
+    img.src = logoUrl;
+  }, [logoUrl]);
+
+  return lightLogo;
 }
 
 export function Logo({
@@ -32,17 +101,17 @@ export function Logo({
   brandSubtitle?: string;
 }) {
   const isWhite = variant === "white" || className?.includes("text-white");
-  const isCustomLogo =
-    Boolean(logoUrl) &&
-    logoUrl !== "/images/logo_hd.png" &&
-    logoUrl !== "/images/logo.png" &&
-    logoUrl !== "/images/brandmark.png";
+  const adaptiveLightLogo = useAdaptiveLogo(logoUrl);
+
+  // Directly respect user's logoSize setting from admin slider (e.g. 16px - 96px, default 48px)
+  const currentHeight = logoSize || (compact ? 36 : 48);
+  const heightStyle = { height: `${currentHeight}px` };
 
   return (
     <Link
       to={to}
       className={cn(
-        "group inline-flex items-center gap-2.5 sm:gap-3 select-none rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring transition-transform hover:opacity-95 shrink-0",
+        "group inline-flex items-center select-none rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring transition-transform hover:opacity-95 shrink-0",
         className
       )}
     >
@@ -51,92 +120,48 @@ export function Logo({
         <img
           src="/images/brandmark.png"
           alt={brandName ?? "Micronics Devlon"}
-          style={{ height: logoSize ? `${logoSize}px` : "36px" }}
+          style={heightStyle}
           className="w-auto object-contain shrink-0 transition-transform duration-200 group-hover:scale-105"
           loading="eager"
         />
-      ) : isCustomLogo ? (
-        /* 2. Custom uploaded logo image if provided */
-        <img
-          src={logoUrl}
-          alt={brandName ?? "Micronics Devlon"}
-          style={logoSize ? { height: `${logoSize}px` } : undefined}
-          className="w-auto max-w-[280px] object-contain transition-transform duration-200 group-hover:scale-[1.02]"
-          loading="eager"
-        />
-      ) : (
-        /* 3. Official Crisp Brandmark + Pixel-Perfect Vector Typography Lockup */
-        <div className="flex items-center gap-2.5 sm:gap-3 shrink-0">
-          {/* Official Emblem Mark: High-DPI 3D Blue M + Orange Swoosh D */}
+      ) : logoUrl ? (
+        /* 2. Uploaded / Configured Custom Logo */
+        <div className="flex items-center shrink-0">
+          {/* Light mode: adaptive dark-navy version so white text is crystal-clear on light background */}
           <img
-            src="/images/brandmark.png"
+            src={adaptiveLightLogo || logoUrl}
             alt={brandName ?? "Micronics Devlon"}
+            style={heightStyle}
             className={cn(
-              "w-auto object-contain shrink-0 transition-transform duration-200 group-hover:scale-105 drop-shadow-[0_1px_2px_rgba(0,0,0,0.06)]",
-              "h-11 sm:h-12 xl:h-[52px]"
+              "object-contain transition-transform duration-200 group-hover:scale-[1.02]",
+              "w-auto max-w-[340px]",
+              isWhite ? "hidden" : "dark:hidden block"
             )}
             loading="eager"
           />
 
-          {/* Crisp, Razor-Sharp Vector Typography */}
-          <div className="flex flex-col justify-center leading-none tracking-normal select-none pt-0.5">
-            {/* Line 1: MICRONICS DEVLON */}
-            <div className="flex items-baseline tracking-tight font-black leading-none font-sans">
-              <span
-                className={cn(
-                  "text-[1.2rem] sm:text-[1.32rem] xl:text-[1.38rem] tracking-[-0.03em] font-black transition-colors",
-                  isWhite
-                    ? "text-white"
-                    : "text-slate-900 dark:text-white"
-                )}
-              >
-                MICRONICS
-              </span>
-              <span className="ml-1 sm:ml-1.5 text-[1.2rem] sm:text-[1.32rem] xl:text-[1.38rem] tracking-[-0.02em] font-black text-orange-600 dark:text-orange-500">
-                DEVLON
-              </span>
-            </div>
-
-            {/* Line 2: DATA PRIVATE LIMITED */}
-            <div className="mt-1 sm:mt-1.5 flex items-center">
-              <span
-                className={cn(
-                  "text-[8.5px] sm:text-[9.5px] xl:text-[10px] font-bold tracking-[0.24em] uppercase leading-none transition-colors",
-                  isWhite
-                    ? "text-slate-300"
-                    : "text-slate-600 dark:text-slate-300"
-                )}
-              >
-                DATA PRIVATE LIMITED
-              </span>
-            </div>
-
-            {/* Line 3: COMPLIANT BACKUP • GUARANTEED RECOVERY */}
-            <div className="mt-1 flex items-center gap-1.5">
-              <span
-                className={cn(
-                  "text-[7px] sm:text-[7.5px] xl:text-[8px] font-bold tracking-[0.14em] uppercase leading-none transition-colors",
-                  isWhite
-                    ? "text-cyan-300"
-                    : "text-cyan-700 dark:text-cyan-400"
-                )}
-              >
-                COMPLIANT BACKUP
-              </span>
-              <span className="text-[6.5px] text-slate-400 dark:text-slate-500 leading-none">•</span>
-              <span
-                className={cn(
-                  "text-[7px] sm:text-[7.5px] xl:text-[8px] font-bold tracking-[0.14em] uppercase leading-none transition-colors",
-                  isWhite
-                    ? "text-cyan-300"
-                    : "text-cyan-700 dark:text-cyan-400"
-                )}
-              >
-                GUARANTEED RECOVERY
-              </span>
-            </div>
-          </div>
+          {/* Dark mode & White variant (Footer/Splash): original white-text logo */}
+          <img
+            src={logoUrl}
+            alt={brandName ?? "Micronics Devlon"}
+            style={heightStyle}
+            className={cn(
+              "object-contain transition-transform duration-200 group-hover:scale-[1.02]",
+              "w-auto max-w-[340px]",
+              isWhite ? "block" : "hidden dark:block"
+            )}
+            loading="eager"
+          />
         </div>
+      ) : (
+        /* 3. Fallback default official logo */
+        <img
+          src="/images/logo_hd.png"
+          alt={brandName ?? "Micronics Devlon"}
+          style={heightStyle}
+          className="w-auto max-w-[320px] object-contain"
+          loading="eager"
+        />
       )}
     </Link>
   );

@@ -1346,7 +1346,57 @@ export function SettingsManager() {
   }, [settings.brandLogoSize]);
   const readImage = (file: File, callback: (value: string) => void) => {
     const reader = new FileReader();
-    reader.onload = () => callback(String(reader.result));
+    reader.onload = () => {
+      const result = String(reader.result);
+      const img = new Image();
+      img.onload = () => {
+        try {
+          const canvas = document.createElement("canvas");
+          canvas.width = img.width;
+          canvas.height = img.height;
+          const ctx = canvas.getContext("2d");
+          if (!ctx) return callback(result);
+
+          ctx.drawImage(img, 0, 0);
+          const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+          const { data, width, height } = imgData;
+
+          let minX = width, minY = height, maxX = 0, maxY = 0;
+          let found = false;
+
+          for (let y = 0; y < height; y++) {
+            for (let x = 0; x < width; x++) {
+              const alpha = data[(y * width + x) * 4 + 3];
+              if (alpha > 15) {
+                if (x < minX) minX = x;
+                if (x > maxX) maxX = x;
+                if (y < minY) minY = y;
+                if (y > maxY) maxY = y;
+                found = true;
+              }
+            }
+          }
+
+          if (found && (minX > 3 || minY > 3 || maxX < width - 4 || maxY < height - 4)) {
+            const cropW = maxX - minX + 1;
+            const cropH = maxY - minY + 1;
+            const cropCanvas = document.createElement("canvas");
+            cropCanvas.width = cropW;
+            cropCanvas.height = cropH;
+            const cropCtx = cropCanvas.getContext("2d");
+            if (cropCtx) {
+              cropCtx.drawImage(canvas, minX, minY, cropW, cropH, 0, 0, cropW, cropH);
+              return callback(cropCanvas.toDataURL("image/png"));
+            }
+          }
+          callback(result);
+        } catch {
+          callback(result);
+        }
+      };
+      img.onerror = () => callback(result);
+      img.src = result;
+    };
     reader.readAsDataURL(file);
   };
   const updateHeroItem = (key: "heroSources" | "heroDestinations", index: number, patch: Partial<{ label: string; logo: string }>) => {
