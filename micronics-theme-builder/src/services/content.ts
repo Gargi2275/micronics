@@ -1,7 +1,7 @@
 import { initialData, type AppData, type ContentType, type Lead, type NewsletterSubscriber, type Status } from "@/data/mock";
 import { FRONTEND_CONTENT_OVERRIDES } from "@/data/overrides";
 
-const STORAGE_KEY = "micronics-devlon-data-v3";
+const STORAGE_KEY = "micronics-devlon-data-v4";
 const AUTH_KEY = "micronics-devlon-admin-auth";
 const CHANGE_EVENT = "micronics-data-change";
 const API_BASE =
@@ -25,11 +25,13 @@ function applyFrontendOverrides(data: AppData): AppData {
       for (const item of list as any[]) {
         if (item?.slug && FRONTEND_CONTENT_OVERRIDES[item.slug]) {
           const ov = FRONTEND_CONTENT_OVERRIDES[item.slug];
-          item.title = ov.title;
-          item.shortDescription = ov.description;
-          item.body = ov.description;
-          item.seoTitle = ov.title;
-          item.seoDescription = ov.description;
+          if (ov) {
+            item.title = ov.title;
+            item.shortDescription = ov.description;
+            item.body = ov.description;
+            item.seoTitle = ov.title;
+            item.seoDescription = ov.description;
+          }
         }
       }
     }
@@ -183,6 +185,7 @@ export function upsertContent(type: ContentType, input: Partial<EditableItem> & 
     })
       .then((res) => {
         if (res.ok) return res.json();
+        return null;
       })
       .then((saved) => {
         if (saved && saved.id) {

@@ -301,12 +301,12 @@ export const initialData: AppData = {
   media: [],
   settings: {
     companyName: "Micronics Devlon",
-    brandName: "Micronics Devlon",
-    brandLogo: "/images/logo.png",
     tagline: "Enterprise Backup, Disaster Recovery & Data Protection",
-    contactEmail: "hello@micronicsdevlon.com",
-    phone: "+1 (555) 014-2026",
-    address: "Los Angeles, CA",
+    contactEmail: "support@micronicsdevlon.com",
+    phone: "+91-99099 24365",
+    address: `402/403, SHILP ARCADE COMPLEX,
+NR MANAS TOWER, JODHAPUR CROSS ROAD, SATELITE,
+AHMEDABAD, GUJARAT, INDIA- 380015`,
     footerText: "Resilient backup operations for modern infrastructure. Protect cloud applications, virtual machines, databases, NAS storage, and endpoints with sub-second restore confidence.",
     privacyPolicy: `Last updated: October 9, 2026
 
@@ -325,7 +325,7 @@ Security and retention
 We use access controls, encryption, monitoring, and backup safeguards appropriate to the information involved. No internet service can guarantee absolute security. We retain information only for as long as needed for the stated purpose, legal requirements, dispute resolution, and security records.
 
 Your choices
-You may request access, correction, deletion, restriction, or a copy of personal information, subject to applicable law. You may unsubscribe from marketing communications at any time. Contact hello@micronicsdevlon.com to make a request.
+You may request access, correction, deletion, restriction, or a copy of personal information, subject to applicable law. You may unsubscribe from marketing communications at any time. Contact support@micronicsdevlon.com to make a request.
 
 Cookies and updates
 We may use essential cookies and similar technologies to operate and understand the website. We may update this policy from time to time and will publish the revised date on this page.`,
@@ -349,7 +349,7 @@ Disclaimers and liability
 Services are provided with commercially reasonable care, but no backup or recovery service can guarantee that every file, workload, or recovery objective will be available in every circumstance. To the extent permitted by law, liability is limited to the fees paid for the affected service during the applicable period.
 
 Changes and contact
-We may update these terms when our services or legal requirements change. Material changes will be communicated through the service or website. Questions about these terms may be sent to hello@micronicsdevlon.com.`,
+We may update these terms when our services or legal requirements change. Material changes will be communicated through the service or website. Questions about these terms may be sent to support@micronicsdevlon.com.`,
 heroSources: [
   { label: "Google Workspace", logo: "https://cdn.simpleicons.org/google" },
   { label: "Microsoft 365", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" },

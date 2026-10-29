@@ -219,9 +219,9 @@ class MediaItem(models.Model):
 class SiteSettings(models.Model):
     company_name = models.CharField(max_length=255, default="Micronics Devlon")
     tagline = models.CharField(max_length=500, blank=True, default="Enterprise Backup, Disaster Recovery & Data Protection")
-    contact_email = models.EmailField(blank=True, default="hello@micronicsdevlon.com")
-    phone = models.CharField(max_length=100, blank=True, default="+1 (555) 014-2026")
-    address = models.TextField(blank=True, default="Los Angeles, CA")
+    contact_email = models.EmailField(blank=True, default="support@micronicsdevlon.com")
+    phone = models.CharField(max_length=100, blank=True, default="+91-99099 24365")
+    address = models.TextField(blank=True, default="402/403, SHILP ARCADE COMPLEX, NR MANAS TOWER, JODHAPUR CROSS ROAD, SATELITE, AHMEDABAD, GUJARAT, INDIA- 380015")
     footer_text = models.TextField(blank=True, default="Resilient backup operations for modern infrastructure.")
     privacy_policy = models.TextField(blank=True, default="")
     terms_of_service = models.TextField(blank=True, default="")

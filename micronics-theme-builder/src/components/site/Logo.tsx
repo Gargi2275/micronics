@@ -47,11 +47,11 @@ function useAdaptiveLogo(logoUrl?: string) {
         let whiteCount = 0;
 
         for (let i = 0; i < data.length; i += 4) {
-          const a = data[i + 3];
+          const a = data[i + 3] ?? 0;
           if (a > 20) {
-            const r = data[i];
-            const g = data[i + 1];
-            const b = data[i + 2];
+            const r = data[i] ?? 0;
+            const g = data[i + 1] ?? 0;
+            const b = data[i + 2] ?? 0;
             const isOrange = r > 160 && g < 140 && b < 80;
             const isWhiteOrLight = r > 165 && g > 165 && b > 165;
             if (isWhiteOrLight && !isOrange) {

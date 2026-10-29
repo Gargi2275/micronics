@@ -7,12 +7,13 @@ import { useAppData } from "@/lib/useAppData";
 function formatFooterTitle(title: string): string {
   if (!title) return "";
   const parts = title.split(" | ");
-  if (parts.length > 1) {
-    const suffix = parts[1].trim();
-    if (suffix !== "Micronics Devlon" && suffix.length > 0) {
-      return suffix;
+  const first = parts[0]?.trim() ?? "";
+  const second = parts[1]?.trim() ?? "";
+  if (parts.length > 1 && second) {
+    if (second !== "Micronics Devlon" && second.length > 0) {
+      return second;
     }
-    return parts[0].trim();
+    return first;
   }
   return title.trim();
 }
@@ -81,6 +82,35 @@ export function Footer() {
               <div className="mt-5 inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-950/50 px-3.5 py-1.5 text-xs text-emerald-300">
                 <span className="flex size-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_#34d399]" />
                 <span className="font-semibold">All Protection Vaults Operational (99.999% SLA)</span>
+              </div>
+
+              {/* Contact Details */}
+              <div className="mt-5 space-y-2 border-t border-white/10 pt-4 text-xs">
+                <p className="flex items-center gap-2">
+                  <span className="font-semibold text-slate-400">Email:</span>
+                  <a
+                    href={`mailto:${data.settings.contactEmail || "support@micronicsdevlon.com"}`}
+                    className="text-blue-400 hover:underline font-medium"
+                  >
+                    {data.settings.contactEmail || "support@micronicsdevlon.com"}
+                  </a>
+                </p>
+                <p className="flex items-center gap-2">
+                  <span className="font-semibold text-slate-400">Phone:</span>
+                  <a
+                    href={`tel:${(data.settings.phone || "+91-99099 24365").replace(/\s+/g, "")}`}
+                    className="text-slate-200 hover:text-white transition-colors font-medium"
+                  >
+                    {data.settings.phone || "+91-99099 24365"}
+                  </a>
+                </p>
+                <div className="flex items-start gap-2 pt-0.5 leading-relaxed">
+                  <span className="font-semibold text-slate-400 shrink-0">Address:</span>
+                  <span className="whitespace-pre-line text-slate-300">
+                    {data.settings.address ||
+                      "402/403, SHILP ARCADE COMPLEX,\nNR MANAS TOWER, JODHAPUR CROSS ROAD, SATELITE,\nAHMEDABAD, GUJARAT, INDIA- 380015"}
+                  </span>
+                </div>
               </div>
             </div>
 

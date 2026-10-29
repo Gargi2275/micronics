@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, CheckCircle2, ShieldCheck, Headphones, BookOpen, Activity, Star, Play } from "lucide-react";
+import { ArrowRight, CheckCircle2, ShieldCheck, Headphones, BookOpen, Activity, Star, Play, Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PageHero } from "@/components/site/PageHero";
 import { ItemGrid, PlatformGrid, PricingCards, QuotePanel, FinalCta } from "@/components/site/ContentBlocks";
@@ -582,6 +582,13 @@ export function TestimonialsPage() {
 }
 
 export function ContactPage() {
+  const data = useAppData();
+  const email = data.settings.contactEmail || "support@micronicsdevlon.com";
+  const phone = data.settings.phone || "+91-99099 24365";
+  const address =
+    data.settings.address ||
+    "402/403, SHILP ARCADE COMPLEX,\nNR MANAS TOWER, JODHAPUR CROSS ROAD, SATELITE,\nAHMEDABAD, GUJARAT, INDIA- 380015";
+
   return (
     <>
       <PageHero
@@ -595,13 +602,47 @@ export function ContactPage() {
         <div className="grid gap-8 lg:grid-cols-[.85fr_1.15fr]">
           <div>
             <h2 className="font-display text-3xl font-black tracking-tight text-foreground">
-              Micronics Devlon
+              {data.settings.brandName || "Micronics Devlon"}
             </h2>
-            <p className="mt-4 text-base text-muted-foreground leading-relaxed">
-              hello@micronicsdevlon.com<br />
-              +1 (555) 014-2026<br />
-              Los Angeles, CA
-            </p>
+
+            <div className="mt-6 space-y-4">
+              <div className="flex items-start gap-3.5">
+                <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                  <Mail className="size-5" />
+                </div>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Support & Inquiries</p>
+                  <a href={`mailto:${email}`} className="text-base font-semibold text-primary hover:underline">
+                    {email}
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3.5">
+                <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                  <Phone className="size-5" />
+                </div>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Direct Line</p>
+                  <a href={`tel:${phone.replace(/\s+/g, "")}`} className="text-base font-semibold text-foreground hover:text-primary transition-colors">
+                    {phone}
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3.5">
+                <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                  <MapPin className="size-5" />
+                </div>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Registered Office</p>
+                  <p className="whitespace-pre-line text-sm font-medium leading-relaxed text-foreground/90">
+                    {address}
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div className="mt-8 rounded-3xl border border-border/80 bg-card p-6 shadow-card">
               <h3 className="font-display text-xl font-black text-foreground">Recovery Advisory</h3>
               <p className="my-3 text-sm text-muted-foreground">
@@ -638,7 +679,7 @@ export function PolicyPage({ type }: { type: "privacy" | "terms" }) {
         <article className="min-w-0 text-left">
           <div className="space-y-6 sm:space-y-8">
             {content.split(/\n{2,}/).filter(Boolean).map((paragraph, index) => {
-              const [heading, ...body] = paragraph.split("\n");
+              const [heading = "", ...body] = paragraph.split("\n");
               const isUpdatedDate = heading.toLowerCase().startsWith("last updated:");
               const isHeading = body.length > 0 && !isUpdatedDate;
               return isHeading ? (
@@ -659,8 +700,8 @@ export function PolicyPage({ type }: { type: "privacy" | "terms" }) {
           <p className="mt-3 text-sm leading-6 text-muted-foreground">
             Questions about this {type === "privacy" ? "privacy policy" : "terms of service"}?
           </p>
-          <a href="mailto:hello@micronicsdevlon.com" className="mt-4 inline-block text-sm font-bold text-primary hover:underline">
-            hello@micronicsdevlon.com
+          <a href={`mailto:${data.settings.contactEmail || "support@micronicsdevlon.com"}`} className="mt-4 inline-block text-sm font-bold text-primary hover:underline">
+            {data.settings.contactEmail || "support@micronicsdevlon.com"}
           </a>
         </aside>
         </div>

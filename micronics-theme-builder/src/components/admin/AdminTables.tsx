@@ -64,6 +64,7 @@ import {
   type ContentType,
   type Status,
   type Lead,
+  type MediaItem,
 } from "@/data/mock";
 import { cn } from "@/lib/utils";
 
@@ -713,7 +714,7 @@ function ContentEditor({
       return;
     }
 
-    const payload: Record<string, any> = {
+    const payload: any = {
       ...item,
       ...form,
       status: (form.status ?? "published") as Status,
@@ -1367,7 +1368,7 @@ export function SettingsManager() {
           for (let y = 0; y < height; y++) {
             for (let x = 0; x < width; x++) {
               const alpha = data[(y * width + x) * 4 + 3];
-              if (alpha > 15) {
+              if (alpha !== undefined && alpha > 15) {
                 if (x < minX) minX = x;
                 if (x > maxX) maxX = x;
                 if (y < minY) minY = y;
@@ -1401,7 +1402,7 @@ export function SettingsManager() {
   };
   const updateHeroItem = (key: "heroSources" | "heroDestinations", index: number, patch: Partial<{ label: string; logo: string }>) => {
     const items = [...settings[key]];
-    items[index] = { ...items[index], ...patch };
+    items[index] = { ...(items[index] ?? { label: "", logo: "" }), ...patch } as { label: string; logo: string };
     setSettings({ ...settings, [key]: items });
   };
 
@@ -1495,6 +1496,14 @@ export function SettingsManager() {
           />
         </Field>
       </div>
+      <Field label="Office Address">
+        <Textarea
+          rows={3}
+          value={settings.address}
+          onChange={(e) => setSettings({ ...settings, address: e.target.value })}
+          className="bg-background text-sm"
+        />
+      </Field>
       <Field label="Footer Description">
         <Textarea
           rows={3}
